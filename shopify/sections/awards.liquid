@@ -1,0 +1,65 @@
+<div class="container  mx-auto py-40">
+	<div class="w-6/12 mx-auto text-center">
+		<h6 class="title_awards">International design awards</h6>
+		<p class="desc_awards py-10">Make your life easier with the N1e electric kick scooter. Same styling as the N1, but with new standard features.</p>
+	</div>
+	<div class="w-8/12 flex mx-auto justify-between pt-20">
+
+		{%  for block in section.blocks %}
+			<div>
+				{% render 'lazy-images', image: block.settings.image, class: 'w-full ' %}
+			</div>
+		{% endfor %}
+	</div>
+</div>
+
+{% schema %}
+{
+    "name": "Awards Section",
+    "class": "section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "default": "Multicolumn",
+        "label": "t:sections.multicolumn.settings.title.label"
+      },
+			{
+        "type": "text",
+        "id": "descp",
+        "label": "Description"
+      }
+
+    ],
+    "blocks": [
+      {
+        "type": "column",
+        "name": "t:sections.multicolumn.blocks.column.name",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Upload Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Awards Sections",
+        "blocks": [
+          {
+            "type": "column"
+          },
+          {
+            "type": "column"
+          },
+          {
+            "type": "column"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

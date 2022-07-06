@@ -1,0 +1,64 @@
+<div class="icons_section" style="background-color:{{ section.settings.bgcolor }}">
+	<div class="container mx-auto flex justify-between">
+        {%  for block in section.blocks %}
+					<div class="flex gap-4 items-center">
+						{% render 'lazy-images', image: block.settings.image, class: 'icon_circle' %}
+						<div class="block">
+							<p class="title_icon">Lorem ipsum</p>
+							<p class="desc_icon">Make your life easier with the</p>
+						</div>
+					</div>
+				{% endfor %}
+	</div>
+</div>
+
+{% schema %}
+{
+    "name": "Icons Section",
+    "class": "section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "default": "Multicolumn",
+        "label": "t:sections.multicolumn.settings.title.label"
+      },
+			{
+        "type": "color",
+        "id": "bgcolor",
+        "label": "Background Color"
+      }
+
+    ],
+    "blocks": [
+      {
+        "type": "column",
+        "name": "t:sections.multicolumn.blocks.column.name",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Upload Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Icons Section",
+        "blocks": [
+          {
+            "type": "column"
+          },
+          {
+            "type": "column"
+          },
+          {
+            "type": "column"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,118 @@
+<div class="review-section pb-20" style="background-color: {{ section.settings.bgcolor }};">
+  <div class="page-width  ">
+    <div class="text-center title-review-section max-w-6xl mx-auto py-20">{{ section.settings.heading}}</div>
+    <div class="swiper mySwiperReview">
+      <div class="swiper-wrapper flex gap-4">
+        {%  for block in section.blocks %}
+        <div class="swiper-slide w-1/4 wrapper_review ">
+          <div class="block review-block p-10">
+            <div class="review-start">
+              {{block.settings.svg_code}}
+            </div>
+            <div class="review-name">
+              {{block.settings.name}}
+            </div>
+            <div class="review-position">
+              {{block.settings.position}}
+            </div>
+            <div class="review-desc">
+              {{block.settings.description}}
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+</div>
+
+<!-- {% javascript %}
+var swiper = new Swiper(".mySwiperReview", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
+  },
+});
+{% endjavascript %} -->
+{% schema %}
+{
+"name": "Review Section",
+"tag": "section",
+"class": "spaced-section spaced-section--full-width",
+"settings": [
+    {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Heading"
+    },
+		{
+			"type": "color",
+			"id": "bgcolor",
+			"label": "Background Color"
+	}
+],
+"blocks": [
+  {
+    "type": "text",
+    "name": "Block",
+    "limit": 10,
+    "settings": [
+      {
+          "type": "html",
+          "id": "svg_code",
+          "label": "SVG Code"
+      },
+      {
+        "type": "text",
+        "id": "name",
+        "label": "Name"
+      },
+      {
+        "type": "richtext",
+        "id": "position",
+        "label": "Position"
+      },
+      {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description Review"
+      }
+    ]
+  }
+],
+"presets": [
+  {
+    "name": "Review Section"
+  }
+]
+}
+{% endschema %}

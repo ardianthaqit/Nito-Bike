@@ -1,0 +1,35 @@
+<div class="banner_btn ">
+	<div class="page-width flex justify-between">
+		<div>
+		<p class="title_banner_btn">	Cutomize your personal electric kick scooter	</p>
+		</div>
+		<a class="def_btn flex items-center gap-4" href="#/">Configure and buy  {% render 'arrow_btn_blue', class: 'w-8 h-auto'  %}</a>
+	</div>
+</div>
+
+{% schema %}
+{
+  "name": "Boxes Section",
+  "tag": "section",
+  "class": "spaced-section spaced-section--full-width",
+  "settings": [
+      {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Heading"
+      },
+      {
+          "type": "richtext",
+          "id": "short-description",
+          "label": "Short description",
+          "default": "<p>Lorem ipsum dolor sit amet...</p>"
+      }
+  ],
+	"presets": [
+	{
+		"name": "Mini Banner with Btn"
+	}
+]
+}
+  {% endschema %}

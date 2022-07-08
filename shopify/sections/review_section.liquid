@@ -1,10 +1,10 @@
 <div class="review-section pb-20" style="background-color: {{ section.settings.bgcolor }};">
   <div class="page-width  ">
     <div class="text-center title-review-section max-w-6xl mx-auto py-20">{{ section.settings.heading}}</div>
-    <div class="swiper mySwiperReview">
-      <div class="swiper-wrapper flex gap-4">
+    <div class="swiper mySwiper-review">
+      <div class=" flex  swiper-wrapper">
         {%  for block in section.blocks %}
-        <div class="swiper-slide w-1/4 wrapper_review ">
+        <div class="e w-1/4 wrapper_review swiper-slide">
           <div class="block review-block p-10">
             <div class="review-start">
               {{block.settings.svg_code}}
@@ -22,9 +22,6 @@
         </div>
         {% endfor %}
       </div>
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
     </div>
   </div>
 </div>

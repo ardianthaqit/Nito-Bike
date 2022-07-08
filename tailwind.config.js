@@ -4,4 +4,9 @@ module.exports = {
     enabled: true,
     content: ["./shopify/**/*.liquid"],
   },
+	theme: {
+    maxWidth: {
+      '1/2': '60%',
+    },
+  }
 };

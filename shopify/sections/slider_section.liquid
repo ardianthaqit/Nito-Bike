@@ -1,10 +1,80 @@
-<div class="container mx-auto flex">
-	<div class="w-1/5">
-		<div class="flex">
-			{% render 'lazy-images', image: block.settings.image, class: 'icon_circle' %}
+
+<div class="swiper mySwiper container flex mx-auto">
+	<div class="swiper-wrapper py-40">
+		<div class="swiper-slide w-full flex lg:flex-row flex-col-reverse">
+			<div class=" lg:w-1/2 w-full">
+				<div class="flex flex-col justify-center h-full">
+					<h1 class="title_slider_product">N1e - The Urban Tender</h1>
+					<p class="desc_slider_product">Make your life easier with the N1e electric kick scooter. Same styling as the N1, but with new standard features.</p>
+					<ul class="ul_li">
+						<li>Recharges in only <span>3-4 hours</span></li>
+						<li>Lightweight <span>13kg</span></li>
+						<li>Range up to <span>20km</span></li>
+						<li>Super power with <span>180 watt</span></li>
+					</ul>
+					<div class="flex gap-4">
+						<a class="bluebutton" href="">Configure and buy {% include 'arrow-down-right-light' %}</a>
+						<a  class="whitebutton" href="">More specifications</a>
+					</div>
+				</div>
+			</div>
+			<div class=" lg:w-1/2 w-full flex justify-center">
+				{% render 'lazy-images', image: section.settings.firstproduct, class: 'w-1/2 h-full' %}
+			</div>
 		</div>
+		<div class="swiper-slide w-full flex  lg:flex-row flex-col-reverse">
+			<div class="lg:w-1/2 w-full">
+				<div class="flex flex-col justify-center h-full">
+					<h1 class="title_slider_product">N1e - The Urban Tender</h1>
+					<p class="desc_slider_product">Make your life easier with the N1e electric kick scooter. Same styling as the N1, but with new standard features.</p>
+					<ul class="ul_li">
+						<li>Recharges in only <span>3-4 hours</span></li>
+						<li>Lightweight <span>13kg</span></li>
+						<li>Range up to <span>20km</span></li>
+						<li>Super power with <span>180 watt</span></li>
+					</ul>
+					<div class="flex  gap-4">
+						<a class="bluebutton" href="">Configure and buy {% include 'arrow-down-right-light' %}</a>
+						<a class="whitebutton" href="">More specifications</a>
+					</div>
+				</div>
+			</div>
+			<div class=" lg:w-1/2 w-full flex justify-center">
+				{% render 'lazy-images', image: section.settings.secondproduct, class: 'w-1/2 h-full' %}
+			</div>
+		</div>
+
 	</div>
-	<div class="w-1/5">
-			
+	<div class="swiper-pagination">
+		<img src="https://cdn.shopify.com/s/files/1/0651/9881/7534/files/Nes_button_active.png?v=1657177518" alt="">
 	</div>
+	<!-- <div class="swiper-button-next">
+	</div>
+	<div class="swiper-button-prev">
+
+	</div> -->
 </div>
+{% schema %}
+{
+  "name": "Slider Product",
+  "tag": "section",
+  "class": "spaced-section spaced-section--full-width",
+  "settings": [
+      {
+          "type": "image_picker",
+          "id": "firstproduct",
+          "label": "Image"
+      },
+			{
+				"type": "image_picker",
+				"id": "secondproduct",
+				"label": "Image"
+		}
+  ],
+	"presets": [
+	{
+		"name": "Slider Product"
+	}
+]
+}
+  {% endschema %}

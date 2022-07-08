@@ -1,29 +1,29 @@
 <div class="bike_wrapper py-20" >
-	<div class="w-full flex {% if section.settings.direction == "right" %} flex-row {% endif %} {% if section.settings.direction == "left" %} flex-row-reverse {% endif %}">
-		<div class="w-1/2">
-			<div class=" {% if section.settings.direction == "right" %} flex justify-end items-center m-auto w-8/12{% endif %} {% if section.settings.direction == "left" %} 
-			flex justify-end items-center m-auto w-8/12  test {% endif %}">
+	<div class="w-full flex lg:flex-row flex-col-reverse {% if section.settings.direction == "right" %} flex-row {% endif %} {% if section.settings.direction == "left" %} flex-row-reverse {% endif %}">
+		<div class="lg:w-1/2 w-full">
+			<div class=" {% if section.settings.direction == "right" %} flex justify-end items-center m-auto lg:w-8/12 w-11/12{% endif %} {% if section.settings.direction == "left" %} 
+			flex justify-end items-center m-auto lg:w-8/12 w-11/12  test {% endif %}">
 				{% render 'lazy-images', image: section.settings.image, class: 'w-full h-3/4 object-contain flex justify-end' %}
 			</div>
 		</div>
-		<div class="w-1/2">
-			<div class="{% if section.settings.direction == "right" %} flex flex-col justify-center h-full w-9/12  {% endif %} {% if section.settings.direction == "left" %} flex flex-col justify-center h-full m-auto w-8/12 test2 {% endif %}">
+		<div class="lg:w-1/2 w-full">
+			<div class="{% if section.settings.direction == "right" %} flex flex-col justify-center h-full lg:w-9/12 w-11/12 mx-auto  {% endif %} {% if section.settings.direction == "left" %} flex flex-col justify-center h-full m-auto lg:w-8/12 w-11/12 test2 {% endif %}">
 				<h1 class="title_bike">N1e - The Urban Tender</h1>
 				<p class="desc_bike">Make your life easier with the N1e electric kick scooter. Same styling as the N1, but with new standard features. Even more comfortable and faster to help you tackle your daily journey routine without effort. Zero emissions, maximum comfort, practical and convenient. The N1e is the intelligent way to move around in complete freedom.</p>
-				<div class="flex justify-between py-20">
-					<div class="block">
+				<div class="flex lg:flex-nowrap flex-wrap justify-between py-20">
+					<div class="block lg:w-auto w-1/2">
 						<span class="mini_info">Recharges</span>
 						<p class="info_bike">3-4 hours</p>
 					</div>
-					<div class="block">
+					<div class="block lg:w-auto w-1/2">
 						<span class="mini_info">Weights</span>
 						<p class="info_bike">13 kg</p>
 					</div>
-					<div class="block">
+					<div class="block lg:w-auto w-1/2">
 						<span class="mini_info">Range</span>
 						<p class="info_bike">Up to 20km</p>
 					</div>
-					<div class="block">
+					<div class="block lg:w-auto w-1/2">
 						<span class="mini_info">Power</span>
 						<p class="info_bike">180 watt</p>
 					</div>

@@ -123,7 +123,7 @@
   </symbol>
 </svg>
 <{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
-  <header class="header header--{{ section.settings.logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %}">
+  <header class="header header--{{ section.settings.logo_position }} lg:px-40 px-10 items-center flex {% if section.settings.menu != blank %} header--has-menu{% endif %}">
     {%- if section.settings.menu != blank -%}
       <header-drawer data-breakpoint="tablet">
         <details id="Details-menu-drawer-container" class="menu-drawer-container">
@@ -294,7 +294,7 @@
       </header-drawer>
     {%- endif -%}
 
-    {%- if section.settings.logo_position == 'top-center' or section.settings.menu == blank -%}
+    <!-- {%- if section.settings.logo_position == 'top-center' or section.settings.menu == blank -%}
       <details-modal class="header__search">
         <details>
           <summary class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
@@ -367,7 +367,7 @@
           </div>
         </details>
       </details-modal>
-    {%- endif -%}
+    {%- endif -%} -->
 
     {%- if request.page_type == 'index' -%}
       <h1 class="header__heading">
@@ -434,8 +434,11 @@
                     </details>
                   </header-menu>
                 {%- else -%}
-                  <a href="{{ link.url }}" class="header__menu-item header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
+                  <!-- <a href="{{ link.url }}" class="header__menu-item header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
                     <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
+                  </a> -->
+									<a href="{{ link.url }}" class="menu_link-header"{% if link.current %} aria-current="page"{% endif %}>
+                    <span {%- if link.current %} class="menu_link-header_active"{% endif %}>{{ link.title | escape }}</span>
                   </a>
                 {%- endif -%}
               </li>
@@ -490,8 +493,8 @@
       {%- endif -%}
     {%- endif -%}
 
-    <div class="header__icons">
-      <details-modal class="header__search">
+    <div class="header__icons items-center gap-4">
+      <!-- <details-modal class="header__search">
         <details>
           <summary class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
             <span>
@@ -562,8 +565,10 @@
             </div>
           </div>
         </details>
-      </details-modal>
-
+      </details-modal> -->
+				<a href="/account/login">
+					{% include 'user' %}
+				</a>
       {%- if shop.customer_accounts_enabled -%}
         <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
           {% render 'icon-account' %}
@@ -578,7 +583,11 @@
           </span>
         </a>
       {%- endif -%}
-
+			<a href="#swym-wishlist" class="swym-wishlist">	
+<svg xmlns="http://www.w3.org/2000/svg" width="21.4" height="19.4" viewBox="0 0 21.4 19.4">
+  <path id="heart" d="M20.007,4.59a5.148,5.148,0,0,0-7.444,0L11.548,5.636,10.534,4.59a5.149,5.149,0,0,0-7.444,0,5.555,5.555,0,0,0,0,7.681L4.1,13.317,11.548,21l7.444-7.681,1.014-1.047a5.553,5.553,0,0,0,0-7.681Z" transform="translate(-0.849 -2.298)" fill="none" stroke="#011625" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"/>
+</svg>
+			</a>
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
         {%- liquid
           if cart == empty

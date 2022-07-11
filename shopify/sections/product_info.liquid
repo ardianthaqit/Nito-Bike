@@ -1,0 +1,72 @@
+<div class="product_infobg">
+	<div class="flex container mx-auto h-full flex-col">
+		<div class="flex flex-col justify-center items-center h-full">
+			<h1>N1e - The Urban Tender</h1>
+			<p>Make your life easier with the N1e electric kick scooter. Same styling as the N1, but with new standard features. Even more comfortable and faster to help you tackle your daily 
+				journey routine without effort. Zero emissions, maximum comfort, practical and convenient. The N1e is the intelligent way to move around in complete freedom.</p>
+				<a href="">Configure and buy</a>
+		</div>
+		<div class="flex flex-col justify-end h-full">
+			<div class="flex">
+				<div>
+					<p>3-4 hours</p><span>hours</span>
+					<p>Recharges</p>
+				</div>
+				<div>
+					<p>3-4 hours</p><span>hours</span>
+					<p>Recharges</p>
+				</div>
+				<div>
+					<p>3-4 hours</p><span>hours</span>
+					<p>Recharges</p>
+				</div>
+				<div>
+					<p>3-4 hours</p><span>hours</span>
+					<p>Recharges</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% schema %}
+{
+    "name": "Product Info",
+    "class": "section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "default": "Multicolumn",
+        "label": "t:sections.multicolumn.settings.title.label"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "column",
+        "name": "t:sections.multicolumn.blocks.column.name",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Upload Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Product Info",
+        "blocks": [
+          {
+            "type": "column"
+          },
+          {
+            "type": "column"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

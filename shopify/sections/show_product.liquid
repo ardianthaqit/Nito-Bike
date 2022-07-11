@@ -1,0 +1,24 @@
+<div class="bg-showproduct">
+	<div class="flex justify-center items-center container mx-auto md:py-40 py-20" >
+		{% render 'lazy-images', image: section.settings.firstproduct, class: 'w-2/5 h-full' %}
+	</div>
+</div>
+{% schema %}
+{
+  "name": "Show Product",
+  "tag": "section",
+  "class": "spaced-section spaced-section--full-width",
+  "settings": [
+      {
+          "type": "image_picker",
+          "id": "firstproduct",
+          "label": "Image"
+      }
+  ],
+	"presets": [
+	{
+		"name": "Show Product"
+	}
+]
+}
+  {% endschema %}

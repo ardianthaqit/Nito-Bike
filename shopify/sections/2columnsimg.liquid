@@ -1,19 +1,16 @@
-<div class="p-10 flex justify-between ">
-	<div class="swiper flex gap-4 mySwiper-images">
-
-		<div class="image_wrapper swiper-wrapper">
+	<div class="flex gap-4 ">
+		<div class="flex w-full justify-between gap-2">
 			{%- for block in section.blocks -%}
-			<div class=" swiper-slide">
-				{% render 'lazy-images', image: block.settings.image, class: 'w-full h-full rounded-2xl' %}
+			<div class="w-1/2">
+				{% render 'lazy-images', image: block.settings.image, class: 'w-full h-full rounded-2xl p-10' %}
 			</div>
 			{% endfor %}
 	</div>
 
 </div>
-</div>
 {% schema %}
 {
-    "name": "4 Columns Image",
+    "name": "2 Columns Image",
     "class": "section",
     "tag": "section",
     "settings": [
@@ -39,11 +36,8 @@
     ],
     "presets": [
       {
-        "name": "4 Columns Image",
+        "name": "2 Columns Image",
         "blocks": [
-          {
-            "type": "column"
-          },
           {
             "type": "column"
           },

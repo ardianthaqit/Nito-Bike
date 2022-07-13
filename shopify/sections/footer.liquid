@@ -88,7 +88,7 @@
                         height="{{ block.settings.image.height }}"
                         style="max-width: min(100%, {{ block.settings.image_width }}px);"
                       > -->
-											{% render 'lazy-images', image: block.settings.image, class: 'w-full h-full' %}
+											{% render 'lazy-images', image: block.settings.image, class: 'lg:w-full w-1/2 h-full' %}
                     {%- else -%}
                       {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
 											{% render 'lazy-images', image: block.settings.image, class: 'w-full h-full' %}

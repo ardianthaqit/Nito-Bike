@@ -1,0 +1,195 @@
+
+<div style="background-color: #F8F9FA;" class="lg:h-40vh h-auto">
+<div class="container mx-auto flex " >
+	<div class="w-full flex justify-between lg:flex-row flex-col" >
+	<div class="lg:w-1/2 w-full" >
+		<div class="lg:py-40 py-10">
+			<h1 class="title_contactpage">Got question about using Nito products</h1>
+			<p class="desc_contactpage">In volutpat odio in lectus vehicula auctor. Suspendisse ut porta turpis. Vestibulum vestibulum commodo est et consectetur. Donec ut magna dolor.</p>
+		</div>
+	</div>
+	<div class="lg:w-1/2 w-full flex justify-end relative"> 
+		{%- form 'contact', id: 'ContactForm', class: 'isolate contactus_page' -%}
+{%- if form.posted_successfully? -%}
+	<h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>{% render 'icon-success' %} {{ 'templates.contact.form.post_success' | t }}</h2>
+{%- elsif form.errors -%}
+	<div class="form__message">
+		<h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>{% render 'icon-error' %} {{ 'templates.contact.form.error_heading' | t }}</h2>
+	</div>
+	<ul class="form-status-list caption-large" role="list">
+		<li>
+			<a href="#ContactForm-email" class="link">
+				{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}
+			</a>
+		</li>
+	</ul>
+{%- endif -%}
+<div class="contact__fields">
+	<p class="contact_form_title">Get in touch!</p>
+	<div class="field">
+		<input class="field__input" autocomplete="name" type="text" id="ContactForm-name" name="contact[{{ 'templates.contact.form.name' | t }}]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" placeholder="{{ 'templates.contact.form.name' | t }}">
+		<label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
+	</div>
+	<div class="field field--with-error">
+		<input
+			autocomplete="email"
+			type="email"
+			id="ContactForm-email"
+			class="field__input"
+			name="contact[email]"
+			spellcheck="false"
+			autocapitalize="off"
+			value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+			aria-required="true"
+			{% if form.errors contains 'email' %}
+				aria-invalid="true"
+				aria-describedby="ContactForm-email-error"
+			{% endif %}
+			placeholder="{{ 'templates.contact.form.email' | t }}"
+		>
+		<label class="field__label" for="ContactForm-email">{{ 'templates.contact.form.email' | t }} <span aria-hidden="true">*</span></label>
+		{%- if form.errors contains 'email' -%}
+			<small class="contact__field-error" id="ContactForm-email-error">
+				<span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
+				<span class="form__message">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</span>
+			</small>
+		{%- endif -%}
+	</div>
+</div>
+<div class="field">
+	<input type="text" id="ContactForm-subject" class="field__input" autocomplete="text" name="contact[subject]"  value="{% if form.subject %}{{ form.subject }}{% elsif customer %}{{ customer.subject }}{% endif %}" placeholder="Your betreff">
+	<label class="field__label" for="ContactForm-phone">Betreff*</label>
+</div>
+<div class="field">
+	<textarea
+		rows="10"
+		id="ContactForm-body"
+		class="text-area field__input"
+		name="contact[{{ 'templates.contact.form.comment' | t }}]"
+		placeholder="{{ 'templates.contact.form.comment' | t }}"
+	>
+		{{- form.body -}}
+	</textarea>
+	<label class="form__label field__label" for="ContactForm-body">{{ 'templates.contact.form.comment' | t }}</label>
+</div>
+<div class="contact__button">
+	<button type="submit" class="button">
+		{{ 'templates.contact.form.send' | t }}
+	</button>
+</div>
+{%- endform -%}
+	</div>
+	</div>
+</div>
+</div>
+<div class="container mx-auto flex h-40vh">
+	<div class="lg:w-1/2 w-full">
+		<div class=" max-w-full md:w-full justify-between mr-auto  flex md:flex-nowrap	flex-wrap">
+			<div class="py-10 lg:w-1/4	w-1/2">
+			<h6 class="subtitle_contactus">Factory adress</h6>
+			<p class="info_contactus">Nito John Doe 25 10000 Bremen Deutschland</p>
+			</div>
+			<div class="py-10 lg:w-1/4	w-1/2">
+				<h6 class="subtitle_contactus">Showroom adress</h6>
+				<p class="info_contactus">Nito John Doe 25 10000 Bremen Deutschland</p>
+			</div>
+			<div class="py-10 lg:w-1/4 w-full	">
+				<h6 class="subtitle_contactus">Adress & Contact</h6>
+				<div class="info_contactus">Email</div> <span class="info_contactus">john@doe.com</span>
+				<div class="info_contactus">Phone</div> <span class="info_contactus">0800 123 45</span>
+			</div>
+		</div>
+	</div>
+</div>
+{% schema %}
+{
+  "name": "Contact Us Page",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Contact form",
+      "label": "Heading"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "accent-1",
+          "label": "t:sections.all.colors.accent_1.label"
+        },
+        {
+          "value": "accent-2",
+          "label": "t:sections.all.colors.accent_2.label"
+        },
+        {
+          "value": "background-1",
+          "label": "t:sections.all.colors.background_1.label"
+        },
+        {
+          "value": "background-2",
+          "label": "t:sections.all.colors.background_2.label"
+        },
+        {
+          "value": "inverse",
+          "label": "t:sections.all.colors.inverse.label"
+        }
+      ],
+      "default": "background-1",
+      "label": "t:sections.all.colors.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "Contact Us Page"
+    }
+  ]
+}
+{% endschema %}

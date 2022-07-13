@@ -1,15 +1,22 @@
-<div class="w-full flex">
-	{%- for block in section.blocks -%}
-	<div class="w-3/4 flex  {% if block.settings.boxposition == 'top' %} flex-col {% endif %} {% if block.settings.boxposition == 'bottom' %} flex-col-reverse	 {% endif %}">
-		<div>
-			{% render 'lazy-images', image: block.settings.image, class: 'w-full h-full ' %}
+<div class="swiper mySwiper_imagetext">
+	<div class="w-full flex swiper-wrapper">
+		{%- for block in section.blocks -%}
+		<div class="swiper-slide">
+			<div class=" w-full w-full flex  {% if block.settings.boxposition == 'top' %} flex-col {% endif %} {% if block.settings.boxposition == 'bottom' %} flex-col-reverse	 {% endif %}">
+				<div>
+					{% render 'lazy-images', image: block.settings.image, class: 'w-full h-full ' %}
+				</div>
+				<div class="box_text text-center relative">
+					{% render 'lazy-images', image: block.settings.secimage, class: 'w-full h-full ' %}
+						<div class="box_absolute">
+							<p class="title_box">Customize wheel color</p>
+							<p class="desc_box">Duis sem ante, hendrerit non malesuada ultrices, ultrices eu eros.</p>
+						</div>
+				</div>
 		</div>
-		<div class="box_text text-center">
-			<p>Customize wheel color</p>
-			<p>Duis sem ante, hendrerit non malesuada ultrices, ultrices eu eros.</p>
 		</div>
+		{% endfor %}
 	</div>
-	{% endfor %}
 </div>
 
 {% schema %}
@@ -33,6 +40,11 @@
           {
             "type": "image_picker",
             "id": "image",
+            "label": "Upload Image"
+          },
+					{
+            "type": "image_picker",
+            "id": "secimage",
             "label": "Upload Image"
           },
 					{

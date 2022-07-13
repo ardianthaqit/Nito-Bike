@@ -1,40 +1,63 @@
-<div class="product_infobg">
-	<div class="flex container mx-auto h-full flex-col">
-		<div class="flex flex-col justify-center items-center h-full">
-			<h1>N1e - The Urban Tender</h1>
-			<p>Make your life easier with the N1e electric kick scooter. Same styling as the N1, but with new standard features. Even more comfortable and faster to help you tackle your daily 
-				journey routine without effort. Zero emissions, maximum comfort, practical and convenient. The N1e is the intelligent way to move around in complete freedom.</p>
-				<a href="">Configure and buy</a>
+<div class="relative h-screen">
+<div class=" {% if section.settings.bgimage == "n1e" %} product_infobg_n1e {% endif %} {% if section.settings.bgimage == "nes" %} product_infobg_nes {% endif %} h-full">
+	<div class="flex container mx-auto h-full flex-col ">
+		<div class="flex justify-end h-full">
+			<div class="md:w-1/2 w-full  h-full items-center flex">
+				<div class=" flex flex-col items-baseline">
+					<h1 class="title_productinfo">N1e - The Urban Tender</h1>
+					<p class="description_ofproductinfo">Make your life easier with the N1e electric kick scooter. Same styling as the N1, but with new standard features. Even more comfortable and faster to help you tackle your daily 
+						journey routine without effort. Zero emissions, maximum comfort, practical and convenient. The N1e is the intelligent way to move around in complete freedom.</p>
+						<a class="button_productdetail flex items-center gap-2" href="">Configure and buy {% render 'arrow_btn_light', class: 'w-8 h-auto'  %}</a>
+				</div>
+			</div>
 		</div>
-		<div class="flex flex-col justify-end h-full">
-			<div class="flex">
-				<div>
-					<p>3-4 hours</p><span>hours</span>
-					<p>Recharges</p>
-				</div>
-				<div>
-					<p>3-4 hours</p><span>hours</span>
-					<p>Recharges</p>
-				</div>
-				<div>
-					<p>3-4 hours</p><span>hours</span>
-					<p>Recharges</p>
-				</div>
-				<div>
-					<p>3-4 hours</p><span>hours</span>
-					<p>Recharges</p>
+		<div class="w-full justify-start">
+			<div class="md:w-1/2 w-full flex h-full items-end pb-20">
+				<div class="flex w-full justify-between">
+					<div class="flex flex-wrap items-center product_infodetail">
+						<p>3-4</p><span>hours</span>
+						<p class="desc_infodetails">Recharges</p>
+					</div>
+					<div class="flex flex-wrap items-center product_infodetail">
+						<p>13 </p><span>kg</span>
+						<p class="desc_infodetails">Weights</p>
+					</div>
+					<div  class="flex flex-wrap items-center product_infodetail">
+						<p>20</p><span>km</span>
+						<p class="desc_infodetails">Range up to</p>
+					</div>
+					<div  class="flex flex-wrap items-center product_infodetail">
+						<p>180</p><span>watt</span>
+						<p class="desc_infodetails">Power</p>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-
+	
+</div>
 {% schema %}
 {
     "name": "Product Info",
     "class": "section",
     "tag": "section",
     "settings": [
+		{
+			"type": "select",
+			"id": "bgimage",
+			"options": [
+				{
+					"value": "n1e",
+					"label": "Change on ne1"
+				},
+				{
+					"value": "nes",
+					"label": "Change on Nes"
+				}
+			],
+			"label": "Change Background Image"
+		},
       {
         "type": "text",
         "id": "title",

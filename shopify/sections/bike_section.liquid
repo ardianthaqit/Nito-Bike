@@ -8,8 +8,8 @@
 		</div>
 		<div class="lg:w-1/2 w-full">
 			<div class="{% if section.settings.direction == "right" %} flex flex-col justify-center h-full lg:w-9/12 w-11/12 mx-auto  {% endif %} {% if section.settings.direction == "left" %} flex flex-col justify-center h-full m-auto lg:w-8/12 w-11/12 test2 {% endif %}">
-				<h1 class="title_bike">N1e - The Urban Tender</h1>
-				<p class="desc_bike">Make your life easier with the N1e electric kick scooter. Same styling as the N1, but with new standard features. Even more comfortable and faster to help you tackle your daily journey routine without effort. Zero emissions, maximum comfort, practical and convenient. The N1e is the intelligent way to move around in complete freedom.</p>
+				<h1 class="title_bike">{{ section.settings.title_bike }}</h1>
+				<div class="desc_bike">{{ section.settings.desc_bike }}</div>
 				<div class="flex lg:flex-nowrap flex-wrap justify-between py-20">
 					<div class="block lg:w-auto w-1/2">
 						<span class="mini_info">Recharges</span>
@@ -48,6 +48,16 @@
           "label": "Image"
       },
 			{
+				"type": "text",
+				"id": "title_bike",
+				"label": "Title"
+		},
+		{
+			"type": "richtext",
+			"id": "desc_bike",
+			"label": "DEscription"
+	},
+			{
         "type": "select",
         "id": "direction",
         "options": [
@@ -69,6 +79,35 @@
           "default": "<p>Lorem ipsum dolor sit amet...</p>"
       }
   ],
+"blocks": [
+  {
+    "type": "text",
+    "name": "Block",
+    "limit": 10,
+    "settings": [
+      {
+          "type": "html",
+          "id": "svg_code",
+          "label": "SVG Code"
+      },
+      {
+        "type": "text",
+        "id": "name",
+        "label": "Name"
+      },
+      {
+        "type": "richtext",
+        "id": "position",
+        "label": "Position"
+      },
+      {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description Review"
+      }
+    ]
+  }
+],
 	"presets": [
 	{
 		"name": "Bike Section"

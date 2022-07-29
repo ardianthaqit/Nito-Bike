@@ -1,0 +1,240 @@
+<div id="specs">
+	<div class="container mx-auto flex lg:flex-row flex-col my-20" >
+		{%  for block in section.blocks %}
+		<div class="lg:w-1/3 w-full	flex flex-wrap lg:mt-0 mt-5  content-start block_spec">
+			<h6 class="w-full title_specs">{{ block.settings.title }}</h6>
+			{% if block.settings.part != blank %}	<span class="w-1/2 part_font">{{ block.settings.part}}</span>	{% endif %}	{% if block.settings.detail != blank %}<span class="w-1/2 detail_font">{{ block.settings.detail}}</span> {% endif %}
+			{% if block.settings.part1 != blank %} <span class="w-1/2 part_font">{{ block.settings.part1}}</span>{% endif %}		{% if block.settings.detail1 != blank %}<span class="w-1/2 detail_font">{{ block.settings.detail1}}</span>{% endif %}
+			{% if block.settings.part2 != blank %}	<span class="w-1/2 part_font">{{ block.settings.part2}}</span>	{% endif %}	{% if block.settings.detail2 != blank %}<span class="w-1/2 detail_font">{{ block.settings.detail2}}</span>{% endif %}
+			{% if block.settings.part3 != blank %}	<span class="w-1/2 part_font">{{ block.settings.part3}}</span>	{% endif %}	{% if block.settings.detail3 != blank %}<span class="w-1/2 detail_font">{{ block.settings.detail3}}</span>{% endif %}
+			{% if block.settings.part4 != blank %}	<span class="w-1/2 part_font">{{ block.settings.part4}}</span>	{% endif %}	{% if block.settings.detail4 != blank %}<span class="w-1/2 detail_font">{{ block.settings.detail4}}</span>{% endif %}
+			{% if block.settings.part5 != blank %}		<span class="w-1/2 part_font">{{ block.settings.part5}}</span>	{% endif %}	{% if block.settings.detail5 != blank %}<span class="w-1/2 detail_font">{{ block.settings.detail5}}</span>{% endif %}
+			{% if block.settings.part6 != blank %}	<span class="w-1/2 part_font">{{ block.settings.part6}}</span>	{% endif %}	{% if block.settings.detail6 != blank %}<span class="w-1/2 detail_font">{{ block.settings.detail6}}</span>{% endif %}
+			{% if block.settings.part7 != blank %}	<span class="w-1/2 part_font">{{ block.settings.part7}}</span>	{% endif %}	{% if block.settings.detail7 != blank %}<span class="w-1/2 detail_font">{{ block.settings.detail7}}</span>{% endif %}
+			{% if block.settings.part8 != blank %}	<span class="w-1/2 part_font">{{ block.settings.part8}}</span>	{% endif %}	{% if block.settings.detail8 != blank %}<span class="w-1/2 detail_font">{{ block.settings.detail8}}</span>{% endif %}
+			{% if block.settings.part9 != blank %}	<span class="w-1/2 part_font">{{ block.settings.part9}}</span>	{% endif %}	{% if block.settings.detail9 != blank %}<span class="w-1/2 detail_font">{{ block.settings.detail9}}</span>{% endif %}
+			{% if block.settings.part10 != blank %}	<span class="w-1/2 part_font">{{ block.settings.part10}}</span>	{% endif %}	{% if block.settings.detail10 != blank %}<span class="w-1/2 detail_font">{{ block.settings.detail10}}</span>{% endif %}
+			{% if block.settings.part11 != blank %}<span class="w-1/2 part_font">{{ block.settings.part11}}</span>	{% endif %}	{% if block.settings.detail11 != blank %}<span class="w-1/2 detail_font">{{ block.settings.detail11}}</span>{% endif %}
+			{% if block.settings.part12 != blank %}<span class="w-1/2 part_font">{{ block.settings.part12}}</span>	{% endif %}	{% if block.settings.detail12 != blank %}<span class="w-1/2 detail_font">{{ block.settings.detail12}}</span>{% endif %}
+			{% if block.settings.part13 != blank %}	<span class="w-1/2 part_font">{{ block.settings.part13}}</span> 	{% endif %}	{% if block.settings.detail13 != blank %}<span class="w-1/2 detail_font">{{ block.settings.detail13}}</span>{% endif %}
+			{% if block.settings.part14 != blank %}	<span class="w-1/2 part_font">{{ block.settings.part14}}</span> 	{% endif %}	{% if block.settings.detail14 != blank %}<span class="w-1/2 detail_font">{{ block.settings.detail14}}</span>{% endif %}
+		</div>
+		{% endfor %}
+	</div>
+	
+</div>
+
+
+
+	{% schema %}
+{
+	"name": "Specs product page",
+"tag": "section",
+"settings": [
+    {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Heading"
+    },
+		{
+			"type": "color",
+			"id": "bgcolor",
+			"label": "Background Color"
+	}
+],
+"blocks": [
+  {
+    "type": "text",
+    "name": "Block",
+    "limit": 3,
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "part",
+        "label": "Part"
+      },
+      {
+          "type": "text",
+          "id": "detail",
+          "label": "Detail"
+      },
+			{
+        "type": "text",
+        "id": "part1",
+        "label": "Part1"
+      },
+      {
+          "type": "text",
+          "id": "detail1",
+          "label": "Detail1"
+      }
+			,
+			{
+        "type": "text",
+        "id": "part2",
+        "label": "part2"
+      },
+      {
+          "type": "text",
+          "id": "detail2",
+          "label": "detail2"
+      }
+			,
+			{
+        "type": "text",
+        "id": "part3",
+        "label": "part3"
+      },
+      {
+          "type": "text",
+          "id": "detail3",
+          "label": "detail3"
+      }
+			,
+			{
+        "type": "text",
+        "id": "part4",
+        "label": "part4"
+      },
+      {
+          "type": "text",
+          "id": "detail4",
+          "label": "detail4"
+      }
+			,
+			{
+        "type": "text",
+        "id": "part5",
+        "label": "part5"
+      },
+      {
+          "type": "text",
+          "id": "detail5",
+          "label": "detail5"
+      }
+			,
+			{
+        "type": "text",
+        "id": "part6",
+        "label": "part6"
+      },
+      {
+          "type": "text",
+          "id": "detail6",
+          "label": "detail6"
+      }
+			,
+			{
+        "type": "text",
+        "id": "part7",
+        "label": "part7"
+      },
+      {
+          "type": "text",
+          "id": "detail7",
+          "label": "detail7"
+      }
+			,
+			{
+        "type": "text",
+        "id": "part8",
+        "label": "part8"
+      },
+      {
+          "type": "text",
+          "id": "detail8",
+          "label": "detail8"
+      }
+			,
+			{
+        "type": "text",
+        "id": "part9",
+        "label": "part9"
+      },
+      {
+          "type": "text",
+          "id": "detail9",
+          "label": "detail9"
+      }
+			,
+			{
+        "type": "text",
+        "id": "part10",
+        "label": "part10"
+      },
+      {
+          "type": "text",
+          "id": "detail10",
+          "label": "detail10"
+      }
+			,
+			{
+        "type": "text",
+        "id": "part11",
+        "label": "part11"
+      },
+      {
+          "type": "text",
+          "id": "detail11",
+          "label": "detail11"
+      }
+			,
+			{
+        "type": "text",
+        "id": "part12",
+        "label": "part12"
+      },
+      {
+          "type": "text",
+          "id": "detail12",
+          "label": "detail12"
+      }
+			,
+			{
+        "type": "text",
+        "id": "part13",
+        "label": "part13"
+      },
+      {
+          "type": "text",
+          "id": "detail13",
+          "label": "detail13"
+      }
+			,
+			{
+        "type": "text",
+        "id": "part14",
+        "label": "part14"
+      },
+      {
+          "type": "text",
+          "id": "detail14",
+          "label": "detail14"
+      }
+			,
+			{
+        "type": "text",
+        "id": "part15",
+        "label": "part15"
+      },
+      {
+          "type": "text",
+          "id": "detail15",
+          "label": "detail15"
+      }
+    ]
+  }
+],
+"presets": [
+  {
+		"name": "Specs product page"
+  }
+]
+}
+{% endschema %}

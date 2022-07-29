@@ -75,19 +75,10 @@
                     </ul>
                   {%- endif -%}
                 {%- when 'image' -%}
-								<p>{{ block.settings.title_image_footer }}</p>
+								<p class="text_image_footer">{{ block.settings.title_image_footer }}</p>
                   <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
                     {%- if block.settings.image != blank -%}
                       {%- assign image_size_2x = block.settings.image_width | times: 2 | at_most: 5760 -%}
-                      <!-- <img
-                        srcset= "{{ block.settings.image | image_url: width: block.settings.image_width }}, {{ block.settings.image | image_url: width: image_size_2x }} 2x"
-                        src="{{ block.settings.image | image_url: width: 400 }}"
-                        alt="{{ block.settings.image.alt | escape }}"
-                        loading="lazy"
-                        width="{{ block.settings.image.width }}"
-                        height="{{ block.settings.image.height }}"
-                        style="max-width: min(100%, {{ block.settings.image_width }}px);"
-                      > -->
 											{% render 'lazy-images', image: block.settings.image, class: 'lg:w-full w-1/2 h-full' %}
                     {%- else -%}
                       {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
@@ -252,7 +243,7 @@
 <div class="flex lg:w-1/2 w-full items-center">
 	<div class="footer__payment flex items-center lg:flex-row flex-col lg:items-center items-start">	
 		<div>
-			<span class="">Our payment methods </span>
+			<span class="icons_footer">Our payment methods </span>
 			<ul class="list list-payment lg:items-center items-start lg:justify-center justify-start" role="list">
 				{%- for type in shop.enabled_payment_types -%}
 					<li class="list-payment__item">
@@ -262,7 +253,7 @@
 			</ul>
 		</div>
 		<div class=" lg:ml-10 ml-0">
-			<span class="">Our partners</span>
+			<span class="icons_footer">Our partners</span>
 			<ul class="list list-payment" role="list">
 					<li class="list-payment__item">
 						{% include 'dhl' %}
@@ -278,7 +269,7 @@
 
 				<div class="lg:w-1/2 w-full  flex flex-col lg:items-center lg:justify-center items-start justify-start">
 					{%- if section.settings.show_social -%}
-					<p>Follow us in social media</p>
+					<p class="icons_footer_social">Follow us in social media</p>
           <ul class="footer__list-social list-unstyled list-social" role="list">
             {%- if settings.social_twitter_link != blank -%}
               <li class="list-social__item">

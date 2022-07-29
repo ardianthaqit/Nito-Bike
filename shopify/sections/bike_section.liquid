@@ -1,5 +1,5 @@
 <div class="bike_wrapper py-20" >
-	<div class="w-full flex lg:flex-row flex-col-reverse {% if section.settings.direction == "right" %} flex-row {% endif %} {% if section.settings.direction == "left" %} flex-row-reverse {% endif %}">
+	<div class="w-full md:flex  block  {% if section.settings.direction == "right" %} flex-row {% endif %} {% if section.settings.direction == "left" %} flex-row-reverse {% endif %}">
 		<div class="lg:w-1/2 w-full">
 			<div class=" {% if section.settings.direction == "right" %} flex justify-end items-center m-auto lg:w-8/12 w-11/12{% endif %} {% if section.settings.direction == "left" %} 
 			flex justify-end items-center m-auto lg:w-8/12 w-11/12  test {% endif %}">
@@ -11,26 +11,16 @@
 				<h1 class="title_bike">{{ section.settings.title_bike }}</h1>
 				<div class="desc_bike">{{ section.settings.desc_bike }}</div>
 				<div class="flex lg:flex-nowrap flex-wrap justify-between py-20">
+					{%  for block in section.blocks %}
 					<div class="block lg:w-auto w-1/2">
-						<span class="mini_info">Recharges</span>
-						<p class="info_bike">3-4 hours</p>
+						<span class="mini_info">{{ block.settings.miniinfo}}</span>
+						<p class="info_bike">{{ block.settings.infobike}}</p>
 					</div>
-					<div class="block lg:w-auto w-1/2">
-						<span class="mini_info">Weights</span>
-						<p class="info_bike">13 kg</p>
-					</div>
-					<div class="block lg:w-auto w-1/2">
-						<span class="mini_info">Range</span>
-						<p class="info_bike">Up to 20km</p>
-					</div>
-					<div class="block lg:w-auto w-1/2">
-						<span class="mini_info">Power</span>
-						<p class="info_bike">180 watt</p>
-					</div>
+					{% endfor %}
 				</div>
-				<div class="flex">
-				<a href="">Configure and buy</a>	
-				<a href="">More details</a>
+				<div class="flex gap-4 items-center">
+			 {% if section.settings.buyurl  != blank %}	<a class="filledbutton flex items-center gap-4" href="{{ section.settings.buyurl }}">{{ section.settings.lebalbuyurl }} {% include 'arrow_btn_light.liquid', class: 'w-10px h-10px'%}</a>	{% endif %}
+			 {% if section.settings.detailurl != blank %}		<a class="unfilled" href="{{ section.settings.detailurl }}"> {{ section.settings.labeldetailurl }}</a> 	{% endif %}
 				</div>
 			</div>
 		</div>
@@ -42,76 +32,86 @@
   "tag": "section",
   "class": "spaced-section spaced-section--full-width",
   "settings": [
-      {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-      },
-			{
-				"type": "text",
-				"id": "title_bike",
-				"label": "Title"
-		},
-		{
-			"type": "richtext",
-			"id": "desc_bike",
-			"label": "DEscription"
-	},
-			{
-        "type": "select",
-        "id": "direction",
-        "options": [
-          {
-            "value": "left",
-            "label": "Change on left"
-          },
-          {
-            "value": "right",
-            "label": "Change on right"
-          }
-        ],
-        "label": "Change direction of image and text"
-      },
-      {
-          "type": "richtext",
-          "id": "short-description",
-          "label": "Short description",
-          "default": "<p>Lorem ipsum dolor sit amet...</p>"
-      }
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "title_bike",
+      "label": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "desc_bike",
+      "label": "Description"
+    },
+    {
+      "type": "url",
+      "id": "buyurl",
+      "label": "Buy Button Url"
+    },
+    {
+      "type": "text",
+      "id": "lebalbuyurl",
+      "label": "Label BuyButton Url"
+    },
+    {
+      "type": "url",
+      "id": "detailurl",
+      "label": "Detail Button Url"
+    },
+    {
+      "type": "text",
+      "id": "labeldetailurl",
+      "label": "Label Detail Button Url"
+    },
+    {
+      "type": "select",
+      "id": "direction",
+      "options": [
+        {
+          "value": "left",
+          "label": "Change on left"
+        },
+        {
+          "value": "right",
+          "label": "Change on right"
+        }
+      ],
+      "label": "Change direction of image and text"
+    },
+    {
+      "type": "richtext",
+      "id": "short-description",
+      "label": "Short description",
+      "default": "<p>Lorem ipsum dolor sit amet...</p>"
+    }
   ],
-"blocks": [
-  {
-    "type": "text",
-    "name": "Block",
-    "limit": 10,
-    "settings": [
-      {
-          "type": "html",
-          "id": "svg_code",
-          "label": "SVG Code"
-      },
-      {
-        "type": "text",
-        "id": "name",
-        "label": "Name"
-      },
-      {
-        "type": "richtext",
-        "id": "position",
-        "label": "Position"
-      },
-      {
-          "type": "richtext",
-          "id": "description",
-          "label": "Description Review"
-      }
-    ]
-  }
-],
-	"presets": [
-	{
-		"name": "Bike Section"
-	}
-]
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Block",
+      "limit": 5,
+      "settings": [
+        {
+          "type": "text",
+          "id": "miniinfo",
+          "label": "small Info Text"
+        },
+        {
+          "type": "text",
+          "id": "infobike",
+          "label": "Info Bike"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Bike Section"
+    }
+  ]
 }
   {% endschema %}

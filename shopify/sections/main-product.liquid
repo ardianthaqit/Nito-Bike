@@ -266,12 +266,20 @@
                 </div>
               </details>
             </div>
+						
           {%- when 'quantity_selector' -%}
             <div class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}" {{ block.shopify_attributes }}>
               <label class="form__label" for="Quantity-{{ section.id }}">
                 {{ 'products.product.quantity.label' | t }}
               </label>
+							<!-- <div class="cart__qty">
 
+								<select id="updates_{{ item.key }}" class="cart__qty-input" value="{{ item.quantity }}" data-quantity-input data-quantity-item="{{ forloop.index }}" data-quantity-input-desktop>
+									{% for i in (1..4) %}
+										<option value="{{ i }}" {% if forloop.index==item.quantity %}selected{% endif %}>{{ i }}</option>
+									{% endfor %}
+								</select>
+						</div> -->
               <quantity-input class="quantity">
                 <button class="quantity__button no-js-hidden" name="minus" type="button">
                   <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
@@ -422,8 +430,11 @@
                   <span class="product-form__error-message"></span>
                 </div>
 
-                {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
-                  <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
+								{%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+
+
+								<input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
+  
                   <div class="product-form__buttons">
                     <button
                       type="submit"
@@ -431,9 +442,10 @@
                       class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
                       {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
                     >
-                        <span>
+                        <span class="cart_button">
                           {%- if product.selected_or_first_available_variant.available -%}
-                            {{ 'products.product.add_to_cart' | t }}
+                            <!-- {{ 'products.product.add_to_cart' | t }} -->
+														In den warenkorb {% include 'cart_button.liquid', class: 'w-10px h-10px'%}
                           {%- else -%}
                             {{ 'products.product.sold_out' | t }}
                           {%- endif -%}

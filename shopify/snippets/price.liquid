@@ -90,4 +90,9 @@
       {{ 'products.product.sold_out' | t }}
     </span>
   {%- endif -%}
+<div class="tax_underprice">
+	Tax ({{ tax_line.title }} {{ tax_line.rate | times: 100 }}%):
+	{{ tax_line.price | money }} exkl. MwSt.
+<span>zzgl. 19 % MwSt. zzgl. Versandkosten</span>
+</div>
 </div>

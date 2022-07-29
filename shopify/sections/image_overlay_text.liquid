@@ -1,0 +1,36 @@
+<div class="page-width relative py-20">
+	{% render 'lazy-images', image: section.settings.image, class: 'w-full h-full relative image_overlay' %}
+	<div class="absolute wrapper_text">
+		{% if section.settings.title != blank %} <div class="title_overlay_text">{{ section.settings.title }}</div> {% endif %}
+		{% if section.settings.title != blank %} <div class="title_overlay_desc">{{ section.settings.desc }}</div>{% endif %}
+	</div>
+</div>
+{% schema %}
+{
+  "name": "Image with text overlay",
+  "tag": "section",
+  "class": "spaced-section spaced-section--full-width",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+		{
+      "type": "text",
+      "id": "desc",
+      "label": "Title"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image with text overlay"
+    }
+  ]
+}
+  {% endschema %}

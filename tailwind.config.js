@@ -29,7 +29,7 @@ module.exports = {
         '62': '62rem',
         '71': '71rem',
         '77': '77rem',
-        
+        '74':'74%',
       },
       maxWidth: {
         '120': '120px',
@@ -49,6 +49,7 @@ module.exports = {
         '80vh': '80vh',
         '40vh': '40vh',
         'unset': 'unset',
+				'10px':'10px',
       },
       fontSize: {
         '10px': '10px',
@@ -75,7 +76,19 @@ module.exports = {
         Nobel: '#B7B7B7',
         Plum: '#973494',
       },
+			container: {
+				padding: {
+					DEFAULT: '1rem',
+					sm: '2rem',
+					lg: '4rem',
+					xl: '5rem',
+					'2xl': '6rem',
+				},
+			},
     },
-  }
-};
+  },
+	plugins: [
+		require('@tailwindcss/aspect-ratio'),
+  ],
+}
 

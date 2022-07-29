@@ -1,30 +1,53 @@
-<div class="banner_btn ">
-	<div class="page-width flex  lg:flex-row flex-col justify-between">
+<div class="banner_btn  {% if section.settings.color == "blue" %} bluebg {% endif %} {% if section.settings.color == "white" %} whitebg {% endif %}" >
+	<div class="xl:container w-11/12 p-0 mx-auto flex lg:flex-row flex-col justify-between">
 		<div>
-		<p class="title_banner_btn">	Cutomize your personal electric kick scooter	</p>
+		<p class="title_banner_btn {% if section.settings.color == "blue" %} text-white	 {% endif %} {% if section.settings.color == "white" %} text-black	 {% endif %}">{{ section.settings.text }}</p>
 		</div>
-		<a class="def_btn flex items-center gap-4" href="#/">Configure and buy  {% render 'arrow_btn_blue', class: 'w-8 h-auto'  %}</a>
+		{% if section.settings.color == "blue" %}
+		<a class="def_btn flex items-center gap-4" href="{{ section.settings.url }}" >{{ section.settings.labelurl }} {% render 'arrow_btn_blue', class: 'w-8 h-auto'  %}</a>
+		{% endif %} {% if section.settings.color == "white" %}
+		<a class="def_btn_btn flex items-center gap-4" href="{{ section.settings.url }}" >{{ section.settings.labelurl }} {% render 'arrow_btn_light', class: 'w-8 h-auto'  %}</a>
+		{% endif %}
+		
 	</div>
 </div>
 
 {% schema %}
 {
-  "name": "Boxes Section",
+  "name": "Mini Banner with Btn",
   "tag": "section",
-  "class": "spaced-section spaced-section--full-width",
   "settings": [
       {
           "type": "text",
-          "id": "heading",
+          "id": "text",
           "label": "Heading",
           "default": "Heading"
       },
-      {
-          "type": "richtext",
-          "id": "short-description",
-          "label": "Short description",
-          "default": "<p>Lorem ipsum dolor sit amet...</p>"
-      }
+			{
+				"type": "select",
+				"id": "color",
+				"options": [
+					{
+						"value": "blue",
+						"label": "Change on blue"
+					},
+					{
+						"value": "white",
+						"label": "Change on white"
+					}
+				],
+				"label": "Change Background color on Blue or White"
+			},
+			{
+				"type": "url",
+				"id": "url",
+				"label": "URL"
+		},
+		{
+			"type": "text",
+			"id": "labelurl",
+			"label": "Label Url"
+	}
   ],
 	"presets": [
 	{

@@ -1,0 +1,67 @@
+
+		<div class="sticky-element  w-full z-9 nav_wrapper_product"  >
+			<div  class="page-width flex justify-start " >
+			<ul class="nav_product "  >
+				<li>
+				{% if section.settings.firstjumpurl %}<a href="#{{ section.settings.firstjumpurl}}"> {{ section.settings.firstjumplabel}} </a>{% endif %}
+				</li>
+				<li>
+					{% if section.settings.secondjumpurl %}<a href="#{{ section.settings.secondjumpurl}}"> {{ section.settings.secondjumplabel}} </a>{% endif %}
+				</li>
+				<li>
+					{% if section.settings.thirdjumpurl %}<a href="#{{ section.settings.thirdjumpurl }}"> {{ section.settings.thirdjumplabel}} </a>{% endif %}
+				</li>
+			</ul>
+		</div>
+	</div>
+
+{% schema %}
+{
+"name": "Nav Product",
+"tag": "section",
+"class": "spaced-section spaced-section--full-width",
+"settings": [
+    {
+        "type": "text",
+        "id": "firstjumplabel",
+        "label": "Nav Name",
+        "default": "Heading"
+    },
+		{
+			"type": "text",
+			"id": "firstjumpurl",
+			"label": "Nav Url",
+			"default": "Heading"
+	},
+		{
+			"type": "text",
+			"id": "secondjumplabel",
+			"label": "Nav Name",
+			"default": "Heading"
+	},
+	{
+		"type": "text",
+		"id": "secondjumpurl",
+		"label": "Nav Url",
+		"default": "Heading"
+},
+	{
+		"type": "text",
+		"id": "thirdjumplabel",
+		"label": "Nav Name",
+		"default": "Heading"
+},
+{
+	"type": "text",
+	"id": "thirdjumpurl",
+	"label": "Nav Url",
+	"default": "Heading"
+}
+],
+"presets": [
+  {
+    "name": "Nav Product"
+  }
+]
+}
+{% endschema %}

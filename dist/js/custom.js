@@ -200,3 +200,23 @@ var swipericon = new Swiper(".mySwipertwocolumns", {
 			clickable: true,
 	}
 });
+$(window).scroll(function(e){ 
+	var $el = $('.sticky-element'); 
+	var isPositionFixed = ($el.css('position') == 'fixed');
+	if ($(this).scrollTop() > 300 && !isPositionFixed){ 
+		$el.css({'position': 'fixed', 'top': '0px'}); 
+	}
+	if ($(this).scrollTop() < 300 && isPositionFixed){
+		$el.css({'position': 'static', 'top': '0px'}); 
+	} 
+});
+lastScroll = 0;
+$(window).on('scroll',function() {    
+    var scroll = $(window).scrollTop();
+    if(lastScroll - scroll > 0) {
+        $(".sticky-element").addClass("top_header");
+    } else {
+        $(".sticky-element").removeClass("top_header");
+    }
+    lastScroll = scroll;
+});

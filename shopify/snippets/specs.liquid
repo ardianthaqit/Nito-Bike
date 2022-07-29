@@ -1,0 +1,8 @@
+<div class="page-width flex">
+	{%  for block in section.blocks %}
+	<div class="w-1/3	flex flex-wrap block_spec">
+		<h6 class="w-full">{{ block.settings.title }}</h6>
+		<span class="w-1/2">{{ block.settings.part }}</span> <span class="w-1/2">{{ block.settings.detail }}</span>
+	</div>
+	{% endfor %}
+</div>

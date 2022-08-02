@@ -2,34 +2,23 @@
 <div class=" {% if section.settings.bgimage == "n1e" %} product_infobg_n1e {% endif %} {% if section.settings.bgimage == "nes" %} product_infobg_nes {% endif %} h-full">
 	<div class="flex container mx-auto h-full flex-col ">
 		<div class="flex justify-end h-full">
-			<div class="md:w-1/2 w-full  h-full items-center flex">
+			<div class="md:w-1/2 w-full  h-full lg:items-center items-end lg:pb-0 pb-20 flex">
 				<div class=" flex flex-col items-baseline">
-					<h1 class="title_productinfo">N1e - The Urban Tender</h1>
-					<p class="description_ofproductinfo">Make your life easier with the N1e electric kick scooter. Same styling as the N1, but with new standard features. Even more comfortable and faster to help you tackle your daily 
-						journey routine without effort. Zero emissions, maximum comfort, practical and convenient. The N1e is the intelligent way to move around in complete freedom.</p>
-						<a class="button_productdetail flex items-center gap-2" href="">Configure and buy {% render 'arrow_btn_light', class: 'w-8 h-auto'  %}</a>
+					<h1 class="title_productinfo">{{ section.settings.title }}</h1>
+					<p class="description_ofproductinfo">{{ section.settings.desc }}</p>
+						<a class="button_productdetail flex items-center gap-2" href="{{ section.settings.urlahref }}">{{ section.settings.labelurl }} {% render 'arrow_btn_light', class: 'w-8 h-auto'  %}</a>
 				</div>
 			</div>
 		</div>
 		<div class="w-full justify-start">
-			<div class="md:w-1/2 w-full flex h-full items-end pb-20">
+			<div class="laptop:w-1/2 w-full flex h-full items-end pb-20">
 				<div class="flex w-full justify-between">
-					<div class="flex flex-wrap items-center product_infodetail">
-						<p>3-4</p><span>hours</span>
-						<p class="desc_infodetails">Recharges</p>
-					</div>
-					<div class="flex flex-wrap items-center product_infodetail">
-						<p>13 </p><span>kg</span>
-						<p class="desc_infodetails">Weights</p>
-					</div>
-					<div  class="flex flex-wrap items-center product_infodetail">
-						<p>20</p><span>km</span>
-						<p class="desc_infodetails">Range up to</p>
-					</div>
-					<div  class="flex flex-wrap items-center product_infodetail">
-						<p>180</p><span>watt</span>
-						<p class="desc_infodetails">Power</p>
-					</div>
+					{%  for block in section.blocks %}
+						<div class="flex flex-wrap items-center product_infodetail">
+							<p>{{block.settings.statisticvalue }}</p><span> {{block.settings.statistic}}</span>
+							<p class="desc_infodetails">{{block.settings.labelstatistic}}</p>
+						</div>
+						{% endfor %}
 				</div>
 			</div>
 		</div>
@@ -61,8 +50,24 @@
       {
         "type": "text",
         "id": "title",
-        "default": "Multicolumn",
-        "label": "t:sections.multicolumn.settings.title.label"
+        "default": "Nito Bike ",
+        "label": "Title"
+      },
+			{
+        "type": "text",
+        "id": "desc",
+        "label": "Description",
+        "default": "Make your life easier with the N1e electric kick scooter. Same styling as the N1, but with new standard features. Even more comfortable and faster to help you tackle your daily journey routine without effort. Zero emissions, maximum comfort, practical and convenient. The N1e is the intelligent way to move around in complete freedom."
+      },
+			{
+        "type": "url",
+        "id": "urlahref",
+        "label": "URL"
+      },
+			{
+        "type": "text",
+        "id": "labelurl",
+        "label": "Url Label"
       }
     ],
     "blocks": [
@@ -71,9 +76,19 @@
         "name": "t:sections.multicolumn.blocks.column.name",
         "settings": [
           {
-            "type": "image_picker",
-            "id": "image",
-            "label": "Upload Image"
+            "type": "text",
+            "id": "statisticvalue",
+            "label": "Statistic Value"
+          },
+					{
+            "type": "text",
+            "id": "statistic",
+            "label": "Statistic"
+          },
+					{
+            "type": "text",
+            "id": "labelstatistic",
+            "label": "Statistic Label"
           }
         ]
       }
@@ -82,9 +97,6 @@
       {
         "name": "Product Info",
         "blocks": [
-          {
-            "type": "column"
-          },
           {
             "type": "column"
           }

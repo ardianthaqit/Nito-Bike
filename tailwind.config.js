@@ -31,6 +31,10 @@ module.exports = {
         '77': '77rem',
         '74':'74%',
       },
+			screens: {
+				'laptop': '1200px',
+				// => @media (min-width: 1024px) { ... }
+			},
       maxWidth: {
         '120': '120px',
         '20r': '20rem',

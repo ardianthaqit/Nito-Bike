@@ -3,22 +3,80 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
+        "judgeme_preview_badge_product_page_fce2a453": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
         },
         "title": {
           "type": "title",
           "settings": {}
         },
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
         "caption": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "{{ product.metafields.descriptors.subtitle.value }}",
             "text_style": "subtitle"
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {}
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Materials",
+            "icon": "leather",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Shipping & Returns",
+            "icon": "truck",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-2": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Dimensions",
+            "icon": "ruler",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-3": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Care Instructions",
+            "icon": "heart",
+            "content": "",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
           }
         },
         "price": {
@@ -38,70 +96,25 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {}
-        },
-        "collapsible-row-0": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Materials",
-            "icon": "leather",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Shipping & Returns",
-            "icon": "truck",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Dimensions",
-            "icon": "ruler",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-3": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Care Instructions",
-            "icon": "heart",
-            "content": "",
-            "page": ""
-          }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
+            "show_dynamic_checkout": false
           }
         }
       },
       "block_order": [
-        "vendor",
+        "judgeme_preview_badge_product_page_fce2a453",
         "title",
+        "vendor",
         "caption",
-        "price",
-        "variant_picker",
-        "quantity_selector",
-        "buy_buttons",
         "description",
         "collapsible-row-0",
         "collapsible-row-1",
         "collapsible-row-2",
         "collapsible-row-3",
-        "share"
+        "share",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -114,73 +127,176 @@
         "padding_bottom": 12
       }
     },
-    "image-with-text": {
-      "type": "image-with-text",
-      "blocks": {
-        "image-with-text-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "image-with-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "image-with-text-0",
-        "image-with-text-1"
-      ],
+    "1658992161c0ddae6d": {
+      "type": "nav_product",
       "settings": {
-        "height": "small",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-2",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "firstjumplabel": "Overview",
+        "firstjumpurl": "#\/",
+        "secondjumplabel": "Specs",
+        "secondjumpurl": "specs",
+        "thirdjumplabel": "Reviews",
+        "thirdjumpurl": "judgeme_product_reviews"
       }
     },
-    "multicolumn": {
-      "type": "multicolumn",
+    "165771887948649364": {
+      "type": "bike_section",
       "blocks": {
-        "column-0": {
+        "ab7ba1d3-4329-4c71-b7a5-384409a9911d": {
+          "type": "text",
+          "settings": {
+            "miniinfo": "Recharges",
+            "infobike": "3-4 hours"
+          }
+        },
+        "f747f2ce-8467-4a38-872d-a0145911bba1": {
+          "type": "text",
+          "settings": {
+            "miniinfo": "Weights",
+            "infobike": "13 kg"
+          }
+        },
+        "8364ced2-9a4d-46ce-bc1c-161ba333cff7": {
+          "type": "text",
+          "settings": {
+            "miniinfo": "Range",
+            "infobike": "Up to 20km"
+          }
+        },
+        "295f9187-0f97-4be0-a71f-1afaddbf2f51": {
+          "type": "text",
+          "settings": {
+            "miniinfo": "Power",
+            "infobike": "180 watt"
+          }
+        }
+      },
+      "block_order": [
+        "ab7ba1d3-4329-4c71-b7a5-384409a9911d",
+        "f747f2ce-8467-4a38-872d-a0145911bba1",
+        "8364ced2-9a4d-46ce-bc1c-161ba333cff7",
+        "295f9187-0f97-4be0-a71f-1afaddbf2f51"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/N1e_-_The_Urban_Tender_details.png",
+        "title_bike": "N1e - The Urban Tender",
+        "desc_bike": "<p>Make your life easier with the N1e electric kick scooter. Same styling as the N1, but with new standard features. Even more comfortable and faster to help you tackle your daily journey routine without effort. Zero emissions, maximum comfort, practical and convenient. The N1e is the intelligent way to move around in complete freedom.<\/p>",
+        "buyurl": "",
+        "lebalbuyurl": "",
+        "detailurl": "",
+        "labeldetailurl": "",
+        "direction": "right",
+        "short-description": "<p>Lorem ipsum dolor sit amet...<\/p>"
+      }
+    },
+    "1657718911c3f5fea8": {
+      "type": "icons-detailpage",
+      "blocks": {
+        "165771891175c99d5c-0": {
           "type": "column",
           "settings": {
-            "title": "Free Shipping",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/surface1.png",
+            "title": "range of up to 60 km"
+          }
+        },
+        "165771891175c99d5c-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/car-lights.png",
+            "title": "Front LED lights"
+          }
+        },
+        "165771891175c99d5c-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_5154.png",
+            "title": "Voltage 72V"
+          }
+        },
+        "867763ca-1438-41c7-80c1-adcea66c5d23": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/charger.png",
+            "title": "Recharges in 3-4.5 hours"
+          }
+        },
+        "2c8fed6b-7188-48da-8806-2cfa94b8c73e": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/dashboard.png",
+            "title": "Max speed 90 km\/h"
+          }
+        },
+        "61835de1-8508-42ef-ad10-70af8fb3f6b1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/XMLID_1055.png",
+            "title": "Tyre 120 x 90 R10"
+          }
+        }
+      },
+      "block_order": [
+        "165771891175c99d5c-0",
+        "165771891175c99d5c-1",
+        "165771891175c99d5c-2",
+        "867763ca-1438-41c7-80c1-adcea66c5d23",
+        "2c8fed6b-7188-48da-8806-2cfa94b8c73e",
+        "61835de1-8508-42ef-ad10-70af8fb3f6b1"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "bgcolor": ""
+      }
+    },
+    "16578659525d126967": {
+      "type": "image_overlay_text",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/N1E_116_1.jpg",
+        "title": "Easy, fast folding",
+        "desc": "Make your life easier with the N1e electric kick scooter. Same styling as the N1, but with new standard features."
+      }
+    },
+    "1657719110d5a36e96": {
+      "type": "multicolumn",
+      "blocks": {
+        "1657719110d4245ab6-0": {
+          "type": "column",
+          "settings": {
+            "title": "Pratical",
+            "text": "<p>The intelligent solution for city travel. With a range of up to 20 km, the N1e is ideal for everyday journeys. Avoid queues, get round any kind of obstacle and don’t waste any more time in traffic..<\/p>",
             "link_label": "",
             "link": ""
           }
         },
-        "column-1": {
+        "1657719110d4245ab6-1": {
           "type": "column",
           "settings": {
-            "title": "Hassle-Free Exchanges",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "Fast",
+            "text": "<p>With the N1e you can move around quickly and in total comfort. The 180 watt engine reaches 20 kph and stopping is safe thanks to the front and rear disc brakes.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1657719110d4245ab6-2": {
+          "type": "column",
+          "settings": {
+            "title": "Fun",
+            "text": "<p>Wheels with inner tubes suited to all terrains so you are not limited to the city, foldable and easily transportable. Take the N1e with you on holiday too and take your pleasure at being free to a new level.<\/p>",
             "link_label": "",
             "link": ""
           }
         }
       },
       "block_order": [
-        "column-0",
-        "column-1"
+        "1657719110d4245ab6-0",
+        "1657719110d4245ab6-1",
+        "1657719110d4245ab6-2"
       ],
       "settings": {
         "title": "",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 2,
+        "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "none",
         "button_label": "",
@@ -192,11 +308,298 @@
         "padding_bottom": 36
       }
     },
+    "1657719232351f7057": {
+      "type": "Image_with_text",
+      "blocks": {
+        "1657719232e68a14b2-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/dettagli-hotspot-batteria.png",
+            "secimage": "shopify:\/\/shop_images\/squarerec.png",
+            "boxposition": "top"
+          }
+        },
+        "1657719232e68a14b2-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/dettagli-hotspot-vano.png",
+            "secimage": "shopify:\/\/shop_images\/squarerec.png",
+            "boxposition": "bottom"
+          }
+        },
+        "1ecd96ec-aa38-4160-956c-0110775088cf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/dettagli-hotspot-pedalina.png",
+            "secimage": "shopify:\/\/shop_images\/squarerec.png",
+            "boxposition": "top"
+          }
+        },
+        "6c60d194-9574-4480-a68e-17dcc4aca976": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pneumatico_pirelli_accessorio.png",
+            "secimage": "shopify:\/\/shop_images\/squarerec.png",
+            "boxposition": "bottom"
+          }
+        }
+      },
+      "block_order": [
+        "1657719232e68a14b2-1",
+        "1657719232e68a14b2-0",
+        "1ecd96ec-aa38-4160-956c-0110775088cf",
+        "6c60d194-9574-4480-a68e-17dcc4aca976"
+      ],
+      "settings": {
+        "title": "Multicolumn"
+      }
+    },
+    "16577196392a6e460f": {
+      "type": "awards",
+      "blocks": {
+        "16577196397b737835-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/GDA19_HO_GOLD_RGB.png"
+          }
+        },
+        "16577196397b737835-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/black.png"
+          }
+        },
+        "16577196397b737835-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BIGSEE_Design_Award.png"
+          }
+        },
+        "2afb4ba3-c3da-4a65-acd4-9f043306ca76": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Platinette_2019_black.png"
+          }
+        },
+        "7b8d7a9c-207c-441b-9aa9-7f3c9228ae0f": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/NY-Producty-Design-Awards-Badge-Gold_Gold.png"
+          }
+        }
+      },
+      "block_order": [
+        "16577196397b737835-0",
+        "16577196397b737835-1",
+        "16577196397b737835-2",
+        "2afb4ba3-c3da-4a65-acd4-9f043306ca76",
+        "7b8d7a9c-207c-441b-9aa9-7f3c9228ae0f"
+      ],
+      "settings": {
+        "title": "International design awards",
+        "descp": "Make your life easier with the N1e electric kick scooter. Same styling as the N1, but with new standard features."
+      }
+    },
+    "16578673369d40f8c7": {
+      "type": "Specs_product",
+      "blocks": {
+        "d19be504-b61d-4fc1-93ac-10f29eab4f54": {
+          "type": "text",
+          "settings": {
+            "title": "Basic information",
+            "part": "Motor",
+            "detail": "Brushless",
+            "part1": "Dimensions",
+            "detail1": "1.220 x 510 x 1.070 mm",
+            "part2": "Folded",
+            "detail2": "1.270 x 300 x 480 mm",
+            "part3": "Weight",
+            "detail3": "13 kg",
+            "part4": "Personalization",
+            "detail4": "5 options",
+            "part5": "Handlebar",
+            "detail5": "Height adjustable",
+            "part6": "Lock",
+            "detail6": "Double hinge safety hasp",
+            "part7": "Display",
+            "detail7": "Multifunctional",
+            "part8": "Wheels",
+            "detail8": "12” tyres",
+            "part9": "Rims",
+            "detail9": "Alloy",
+            "part10": "Brakes",
+            "detail10": "Front and rear disk",
+            "part11": "Lights",
+            "detail11": "LED",
+            "part12": "Board",
+            "detail12": "Marine plywood",
+            "part13": "Mudguards",
+            "detail13": "Alloy",
+            "part14": "Kickstand",
+            "detail14": "Standard",
+            "part15": "",
+            "detail15": ""
+          }
+        },
+        "945867af-522c-4390-bc55-b36e4f966395": {
+          "type": "text",
+          "settings": {
+            "title": "Performance",
+            "part": "Top speed",
+            "detail": "20 - 25 km\/h",
+            "part1": "Speed control",
+            "detail1": "6 km\/h",
+            "part2": "Range",
+            "detail2": "20 km",
+            "part3": "Power",
+            "detail3": "250 Watt",
+            "part4": "",
+            "detail4": "",
+            "part5": "",
+            "detail5": "",
+            "part6": "",
+            "detail6": "",
+            "part7": "",
+            "detail7": "",
+            "part8": "",
+            "detail8": "",
+            "part9": "",
+            "detail9": "",
+            "part10": "",
+            "detail10": "",
+            "part11": "",
+            "detail11": "",
+            "part12": "",
+            "detail12": "",
+            "part13": "",
+            "detail13": "",
+            "part14": "",
+            "detail14": "",
+            "part15": "",
+            "detail15": ""
+          }
+        },
+        "0852fbb9-c919-483f-9f47-3b5ec42a4dc1": {
+          "type": "text",
+          "settings": {
+            "title": "Batery",
+            "part": "Type",
+            "detail": "Lithium ions",
+            "part1": "Voltage",
+            "detail1": "36 V",
+            "part2": "Amperage",
+            "detail2": "8,7 Ah",
+            "part3": "Recharge time",
+            "detail3": "3-4 hours",
+            "part4": "Charge input",
+            "detail4": "110 V \/ 220 V",
+            "part5": "",
+            "detail5": "",
+            "part6": "",
+            "detail6": "",
+            "part7": "",
+            "detail7": "",
+            "part8": "",
+            "detail8": "",
+            "part9": "",
+            "detail9": "",
+            "part10": "",
+            "detail10": "",
+            "part11": "",
+            "detail11": "",
+            "part12": "",
+            "detail12": "",
+            "part13": "",
+            "detail13": "",
+            "part14": "",
+            "detail14": "",
+            "part15": "",
+            "detail15": ""
+          }
+        }
+      },
+      "block_order": [
+        "d19be504-b61d-4fc1-93ac-10f29eab4f54",
+        "945867af-522c-4390-bc55-b36e4f966395",
+        "0852fbb9-c919-483f-9f47-3b5ec42a4dc1"
+      ],
+      "settings": {
+        "heading": "Heading",
+        "bgcolor": ""
+      }
+    },
+    "judgeme_section_review_widget_721c": {
+      "type": "apps",
+      "blocks": {
+        "judgeme_review_widget_3d57b3be": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judgeme_review_widget_3d57b3be"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "16577197268389c894": {
+      "type": "accessories_section",
+      "disabled": true,
+      "blocks": {
+        "151d2741-eebd-4cc6-abba-d55fdab83aef": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/staffa_bauletto_HD.png",
+            "text": "Top case support"
+          }
+        },
+        "afd2f367-d00a-4958-8345-098c55be5334": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/accessori_sella_black.png",
+            "text": "Leather saddle"
+          }
+        },
+        "92580caf-8a12-43ed-8f56-236a4803d7a5": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/17.png",
+            "text": "Top case 25L"
+          }
+        }
+      },
+      "block_order": [
+        "151d2741-eebd-4cc6-abba-d55fdab83aef",
+        "afd2f367-d00a-4958-8345-098c55be5334",
+        "92580caf-8a12-43ed-8f56-236a4803d7a5"
+      ],
+      "settings": {
+        "heading": "Accessories",
+        "description": "Make your life easier with the N1e electric kick scooter. Same styling as the N1,",
+        "btn": "#",
+        "btnlabel": "See all accesories",
+        "bgcolor": ""
+      }
+    },
+    "165771982215f9c41e": {
+      "type": "custom-form",
+      "settings": {
+        "heading": "Contact form",
+        "bgcolor": "",
+        "heading_size": "h1",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "product-recommendations": {
       "type": "product-recommendations",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
+        "products_to_show": 4,
         "columns_desktop": 4,
         "color_scheme": "background-1",
         "image_ratio": "square",
@@ -211,8 +614,17 @@
   },
   "order": [
     "main",
-    "image-with-text",
-    "multicolumn",
+    "1658992161c0ddae6d",
+    "165771887948649364",
+    "1657718911c3f5fea8",
+    "16578659525d126967",
+    "1657719110d5a36e96",
+    "1657719232351f7057",
+    "16577196392a6e460f",
+    "16578673369d40f8c7",
+    "judgeme_section_review_widget_721c",
+    "16577197268389c894",
+    "165771982215f9c41e",
     "product-recommendations"
   ]
 }

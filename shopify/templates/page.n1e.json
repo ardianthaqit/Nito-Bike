@@ -1,212 +1,88 @@
 {
   "sections": {
-    "16571150426ab745af": {
-      "type": "slider_section",
+    "main": {
+      "type": "main-page",
+      "disabled": true,
       "settings": {
-        "firstproduct": "shopify:\/\/shop_images\/Livello_1.png",
-        "secondproduct": "shopify:\/\/shop_images\/Nes_17_con_ombra.png"
+        "padding_top": 28,
+        "padding_bottom": 28
       }
     },
-    "165702366162115100": {
-      "type": "icons",
+    "1657498182a6c74fc3": {
+      "type": "product_info",
       "blocks": {
-        "16570236613f684df5-0": {
+        "1657498182504ffe27-0": {
+          "type": "column",
+          "settings": {}
+        },
+        "1657498182504ffe27-1": {
+          "type": "column",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "1657498182504ffe27-0",
+        "1657498182504ffe27-1"
+      ],
+      "settings": {
+        "bgimage": "n1e",
+        "title": "Multicolumn"
+      }
+    },
+    "1657454172d0d8608b": {
+      "type": "multicolumn",
+      "blocks": {
+        "165745417228221bb0-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Ellipse_1.png"
+            "title": "Pratical",
+            "text": "<p>The intelligent solution for city travel. With a range of up to 20 km, the N1e is ideal for everyday journeys. Avoid queues, get round any kind of obstacle and don’t waste any more time in traffic..<\/p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "16570236613f684df5-1": {
+        "165745417228221bb0-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Ellipse_1_5bf65b98-ca35-4593-b856-cafb5ed9d02c.png"
+            "title": "Fast",
+            "text": "<p>With the N1e you can move around quickly and in total comfort. The 180 watt engine reaches 20 kph and stopping is safe thanks to the front and rear disc brakes.<\/p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "16570236613f684df5-2": {
+        "165745417228221bb0-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Ellipse_1_697935e9-51be-49f5-885e-7f352192fd89.png"
-          }
-        },
-        "d2fda7c4-37e8-465a-b277-e68bb6e4ccb7": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Ellipse_1_eb09064f-8cea-4138-905b-b0eca338ef4f.png"
+            "title": "Fun",
+            "text": "<p>Wheels with inner tubes suited to all terrains so you are not limited to the city, foldable and easily transportable. Take the N1e with you on holiday too and take your pleasure at being free to a new level.<\/p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "16570236613f684df5-0",
-        "16570236613f684df5-1",
-        "16570236613f684df5-2",
-        "d2fda7c4-37e8-465a-b277-e68bb6e4ccb7"
+        "165745417228221bb0-0",
+        "165745417228221bb0-1",
+        "165745417228221bb0-2"
       ],
       "settings": {
-        "title": "Multicolumn",
-        "bgcolor": ""
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
-    "16570129039b779164": {
-      "type": "bike_section",
-      "blocks": {
-        "718979fc-ce80-4237-b3d2-70665672e9d8": {
-          "type": "text",
-          "settings": {
-            "miniinfo": "Recharges",
-            "infobike": "3-4 hours"
-          }
-        },
-        "4e6838a7-037e-49c5-aadb-0ccabd5d10e1": {
-          "type": "text",
-          "settings": {
-            "miniinfo": "Weights",
-            "infobike": "13 kg"
-          }
-        },
-        "2bb094bd-4bb1-4bec-949c-2defae57054e": {
-          "type": "text",
-          "settings": {
-            "miniinfo": "Range",
-            "infobike": "Up to 20km"
-          }
-        },
-        "f912d74e-96f7-4ac8-8dab-cdb623243c44": {
-          "type": "text",
-          "settings": {
-            "miniinfo": "Power",
-            "infobike": "180 watt"
-          }
-        }
-      },
-      "block_order": [
-        "718979fc-ce80-4237-b3d2-70665672e9d8",
-        "4e6838a7-037e-49c5-aadb-0ccabd5d10e1",
-        "2bb094bd-4bb1-4bec-949c-2defae57054e",
-        "f912d74e-96f7-4ac8-8dab-cdb623243c44"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/N1e_-_The_Urban_Tender.png",
-        "title_bike": "N1e - The Urban Tender",
-        "desc_bike": "<p>Make your life easier with the N1e electric kick scooter. Same styling as the N1, but with new standard features. Even more comfortable and faster to help you tackle your daily journey routine without effort. Zero emissions, maximum comfort, practical and convenient. The N1e is the intelligent way to move around in complete freedom.<\/p>",
-        "buyurl": "#",
-        "lebalbuyurl": "Configure and buy",
-        "detailurl": "#",
-        "labeldetailurl": "More details",
-        "direction": "right",
-        "short-description": "<p>Lorem ipsum dolor sit amet...<\/p>"
-      }
-    },
-    "16570092354f24c9ea": {
-      "type": "mini-banner_btn",
-      "settings": {
-        "text": "Cutomize your personal electric kick scooter",
-        "color": "white",
-        "url": "",
-        "labelurl": "Configure and buy"
-      }
-    },
-    "165702319361285a75": {
-      "type": "bike_section",
-      "blocks": {
-        "77722c41-e173-4890-8317-43dd7dcb6a0a": {
-          "type": "text",
-          "settings": {
-            "miniinfo": "Recharges",
-            "infobike": "3-4 hours"
-          }
-        },
-        "aea4aa80-b30f-4655-a158-516edfbdf544": {
-          "type": "text",
-          "settings": {
-            "miniinfo": "Max speed",
-            "infobike": "90 km\/h"
-          }
-        },
-        "8ca12b60-e52b-4158-a466-77c826586bac": {
-          "type": "text",
-          "settings": {
-            "miniinfo": "Range",
-            "infobike": "Up to 60km"
-          }
-        },
-        "f7564024-be73-42ed-8d2e-c03a91ca226f": {
-          "type": "text",
-          "settings": {
-            "miniinfo": "Voltage",
-            "infobike": "72 V"
-          }
-        }
-      },
-      "block_order": [
-        "77722c41-e173-4890-8317-43dd7dcb6a0a",
-        "aea4aa80-b30f-4655-a158-516edfbdf544",
-        "8ca12b60-e52b-4158-a466-77c826586bac",
-        "f7564024-be73-42ed-8d2e-c03a91ca226f"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/NES_-_No_one_is_like_him.png",
-        "title_bike": "NES - No one is like him",
-        "desc_bike": "<p>Maximum personalization, constant thrills. NES combines the freedom of an electric engine with all the charm of wood and design, for even more exclusive riding pleasure. Anywhere.<\/p>",
-        "buyurl": "#",
-        "lebalbuyurl": "Configure and buy",
-        "detailurl": "#",
-        "labeldetailurl": "More details",
-        "direction": "left",
-        "short-description": "<p>Lorem ipsum dolor sit amet...<\/p>"
-      }
-    },
-    "165700928027f7671b": {
-      "type": "review_section",
-      "blocks": {
-        "37baddd3-6b86-43d7-bfaf-e17baf7073a3": {
-          "type": "text",
-          "settings": {
-            "svg_code": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"124\" height=\"19\" viewbox=\"0 0 124 19\">\n  <g id=\"Starts\" transform=\"translate(-630 -3046)\">\n    <path id=\"Star\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(628 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(654 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_2\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(706 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_3\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(680 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_4\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(732 3044)\" fill=\"#ffc543\"><\/path>\n  <\/g>\n<\/svg>",
-            "name": "John Doe",
-            "position": "",
-            "description": "<p>Duis at est eget metus molestie feugiat vel sed lorem. Aenean et justo id diam<\/p>"
-          }
-        },
-        "d6f4c6ac-43a2-438c-af04-d60a8f0a4224": {
-          "type": "text",
-          "settings": {
-            "svg_code": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"124\" height=\"19\" viewbox=\"0 0 124 19\">\n  <g id=\"Starts\" transform=\"translate(-630 -3046)\">\n    <path id=\"Star\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(628 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(654 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_2\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(706 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_3\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(680 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_4\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(732 3044)\" fill=\"#ffc543\"><\/path>\n  <\/g>\n<\/svg>",
-            "name": "John Doe",
-            "position": "",
-            "description": "<p>Curabitur tincidunt lacus sem, sed eleifend est commodo ac. Vestibulum eget risus ac ante faucibus lobortis sit amet et lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis posuere eu risus in consectetur. Suspendisse potenti.<\/p>"
-          }
-        },
-        "2219e079-f4e1-4d31-a371-7bdcd4e9bc65": {
-          "type": "text",
-          "settings": {
-            "svg_code": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"124\" height=\"19\" viewbox=\"0 0 124 19\">\n  <g id=\"Starts\" transform=\"translate(-630 -3046)\">\n    <path id=\"Star\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(628 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(654 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_2\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(706 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_3\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(680 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_4\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(732 3044)\" fill=\"#ffc543\"><\/path>\n  <\/g>\n<\/svg>",
-            "name": "John Doe",
-            "position": "",
-            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum elit erat, a condimentum lectus pharetra a. Donec sollicitudin eros iaculis, vulputate dui sed, dignissim ante. Morbi pretium pulvinar vehicula.<\/p>"
-          }
-        },
-        "286bfc9e-0915-4b55-a1b0-98a8b3436c74": {
-          "type": "text",
-          "settings": {
-            "svg_code": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"124\" height=\"19\" viewbox=\"0 0 124 19\">\n  <g id=\"Starts\" transform=\"translate(-630 -3046)\">\n    <path id=\"Star\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(628 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(654 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_2\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(706 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_3\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(680 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_4\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(732 3044)\" fill=\"#ffc543\"><\/path>\n  <\/g>\n<\/svg>",
-            "name": "John Doe",
-            "position": "",
-            "description": "<p>Nullam quis magna vel libero porttitor euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam ex magna, scelerisque at lorem et, maximus tempus lacus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin vehicula neque erat, a blandit elit vehicula non.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "37baddd3-6b86-43d7-bfaf-e17baf7073a3",
-        "d6f4c6ac-43a2-438c-af04-d60a8f0a4224",
-        "2219e079-f4e1-4d31-a371-7bdcd4e9bc65",
-        "286bfc9e-0915-4b55-a1b0-98a8b3436c74"
-      ],
-      "settings": {
-        "heading": "Trusted by thousand of satisfied clients all across the globe",
-        "bgcolor": "#f7f7f7"
-      }
-    },
-    "165900931424a39015": {
+    "16574548703a95b044": {
       "type": "mini-banner_btn",
       "settings": {
         "text": "Cutomize your personal electric kick scooter",
@@ -215,28 +91,263 @@
         "labelurl": "Configure and buy"
       }
     },
-    "165668480771c8417e": {
-      "type": "4columnsimg",
+    "1657494037b74f2f62": {
+      "type": "Image_with_text",
       "blocks": {
-        "1656684807d7653023-0": {
+        "1657494037833bbb4f-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/N1E_075.png",
+            "secimage": "shopify:\/\/shop_images\/Rectangle_1.png",
+            "boxposition": "top"
+          }
+        },
+        "1657494037833bbb4f-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/N1E_155.png",
+            "secimage": "shopify:\/\/shop_images\/Rectangle_1.png",
+            "boxposition": "bottom"
+          }
+        },
+        "348434ff-90c2-4d95-a292-6be6bb7979ca": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/N1E_095.png",
+            "secimage": "shopify:\/\/shop_images\/Rectangle_1.png",
+            "boxposition": "top"
+          }
+        },
+        "45aba659-ebc1-4e45-9b60-e414ff5beb68": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/N1E_071.png",
+            "secimage": "shopify:\/\/shop_images\/Rectangle_1.png",
+            "boxposition": "bottom"
+          }
+        }
+      },
+      "block_order": [
+        "1657494037833bbb4f-0",
+        "1657494037833bbb4f-1",
+        "348434ff-90c2-4d95-a292-6be6bb7979ca",
+        "45aba659-ebc1-4e45-9b60-e414ff5beb68"
+      ],
+      "settings": {
+        "title": "Multicolumn"
+      }
+    },
+    "165745543571ec3b8c": {
+      "type": "show_product",
+      "settings": {
+        "firstproduct": "shopify:\/\/shop_images\/N1e_-_The_Urban_Tender_details.png"
+      }
+    },
+    "165745663961baa50e": {
+      "type": "icons-detailpage",
+      "blocks": {
+        "1657456639dbaf0445-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/surface1.png",
+            "title": "range of up to 20 km"
+          }
+        },
+        "1657456639dbaf0445-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/car-lights.png",
+            "title": "Front LED lights"
+          }
+        },
+        "1657456639dbaf0445-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_5154.png",
+            "title": "250 watt power"
+          }
+        },
+        "c0b5bf21-9634-4060-bda2-ef0728a4f20a": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/charger_92dcd45c-4d9c-4662-b760-ec1dece11894.png",
+            "title": "Recharges in 3-4 hours"
+          }
+        },
+        "0ca9763c-f54e-4b76-9596-5c1292bfab89": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/dashboard.png",
+            "title": "Speed 20 - 25 km\/h"
+          }
+        },
+        "e6037040-91ee-41b4-96e4-a07ac586d45c": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/XMLID_1055.png",
+            "title": "12’’ alloy wheels"
+          }
+        }
+      },
+      "block_order": [
+        "1657456639dbaf0445-0",
+        "1657456639dbaf0445-1",
+        "1657456639dbaf0445-2",
+        "c0b5bf21-9634-4060-bda2-ef0728a4f20a",
+        "0ca9763c-f54e-4b76-9596-5c1292bfab89",
+        "e6037040-91ee-41b4-96e4-a07ac586d45c"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "bgcolor": ""
+      }
+    },
+    "16576108066c73a015": {
+      "type": "accessories_section",
+      "disabled": true,
+      "blocks": {
+        "d2a6f56e-9ea4-48fd-b9d2-e203490ad1a2": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/N1_CUSTODIA_new.png",
+            "text": "Carry case"
+          }
+        },
+        "be85bf9f-c227-4cd5-94fd-d419e66d001a": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/accessori-01_post_copy.png",
+            "text": "White strap"
+          }
+        },
+        "0bead725-df97-4549-a541-fd3ed8ed8028": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/accessori-02.png",
+            "text": "Black strap"
+          }
+        }
+      },
+      "block_order": [
+        "d2a6f56e-9ea4-48fd-b9d2-e203490ad1a2",
+        "be85bf9f-c227-4cd5-94fd-d419e66d001a",
+        "0bead725-df97-4549-a541-fd3ed8ed8028"
+      ],
+      "settings": {
+        "heading": "Accessories",
+        "description": "Make your life easier with the N1e electric kick scooter. Same styling as the N1,",
+        "btn": "#",
+        "btnlabel": "See all accesories",
+        "bgcolor": "#f8f9fa"
+      }
+    },
+    "16574656587b3fbf11": {
+      "type": "2columnsimg",
+      "blocks": {
+        "1657465657fa8920cc-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Mask_Group_16.png"
+          }
+        },
+        "1657465657fa8920cc-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Mask_Group_15.png"
+          }
+        }
+      },
+      "block_order": [
+        "1657465657fa8920cc-0",
+        "1657465657fa8920cc-1"
+      ],
+      "settings": {
+        "title": "Multicolumn"
+      }
+    },
+    "1657613135fc8c6eb7": {
+      "type": "mini-banner_btn",
+      "settings": {
+        "text": "Cutomize your personal electric kick scooter",
+        "color": "blue",
+        "url": "#",
+        "labelurl": "Configure and buy"
+      }
+    },
+    "1657465896c6d561c0": {
+      "type": "review_section",
+      "blocks": {
+        "13172aee-bb9e-48e3-960b-51ec2a75e061": {
+          "type": "text",
+          "settings": {
+            "svg_code": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"124\" height=\"19\" viewbox=\"0 0 124 19\">\n  <g id=\"Starts\" transform=\"translate(-630 -3046)\">\n    <path id=\"Star\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(628 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(654 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_2\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(706 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_3\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(680 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_4\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(732 3044)\" fill=\"#ffc543\"><\/path>\n  <\/g>\n<\/svg>",
+            "name": "John Doe",
+            "position": "",
+            "description": "<p>Duis at est eget metus molestie feugiat vel sed lorem. Aenean et justo id diam<\/p>"
+          }
+        },
+        "572a371a-9663-400b-8750-c2eb3714b74f": {
+          "type": "text",
+          "settings": {
+            "svg_code": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"124\" height=\"19\" viewbox=\"0 0 124 19\">\n  <g id=\"Starts\" transform=\"translate(-630 -3046)\">\n    <path id=\"Star\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(628 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(654 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_2\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(706 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_3\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(680 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_4\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(732 3044)\" fill=\"#ffc543\"><\/path>\n  <\/g>\n<\/svg>",
+            "name": "Joe Doe",
+            "position": "",
+            "description": "<p>Curabitur tincidunt lacus sem, sed eleifend est commodo ac. Vestibulum eget risus ac ante faucibus lobortis sit amet et lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis posuere eu risus in consectetur. Suspendisse potenti.<\/p>"
+          }
+        },
+        "439365dc-03b5-40f0-b291-24894d6ec574": {
+          "type": "text",
+          "settings": {
+            "svg_code": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"124\" height=\"19\" viewbox=\"0 0 124 19\">\n  <g id=\"Starts\" transform=\"translate(-630 -3046)\">\n    <path id=\"Star\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(628 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(654 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_2\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(706 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_3\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(680 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_4\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(732 3044)\" fill=\"#ffc543\"><\/path>\n  <\/g>\n<\/svg>",
+            "name": "Joe Doe",
+            "position": "",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum elit erat, a condimentum lectus pharetra a. Donec sollicitudin eros iaculis, vulputate dui sed, dignissim ante. Morbi pretium pulvinar vehicula.<\/p>"
+          }
+        },
+        "cdfa305d-4dd4-4145-8b80-84f896693127": {
+          "type": "text",
+          "settings": {
+            "svg_code": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"124\" height=\"19\" viewbox=\"0 0 124 19\">\n  <g id=\"Starts\" transform=\"translate(-630 -3046)\">\n    <path id=\"Star\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(628 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(654 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_2\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(706 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_3\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(680 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_4\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(732 3044)\" fill=\"#ffc543\"><\/path>\n  <\/g>\n<\/svg>",
+            "name": "Joe Doe",
+            "position": "",
+            "description": "<p>Nullam quis magna vel libero porttitor euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam ex magna, scelerisque at lorem et, maximus tempus lacus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin vehicula neque erat, a blandit elit vehicula non.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "13172aee-bb9e-48e3-960b-51ec2a75e061",
+        "572a371a-9663-400b-8750-c2eb3714b74f",
+        "439365dc-03b5-40f0-b291-24894d6ec574",
+        "cdfa305d-4dd4-4145-8b80-84f896693127"
+      ],
+      "settings": {
+        "heading": "Trusted by thousand of satisfied clients all across the globe",
+        "bgcolor": "#f7f7f7"
+      }
+    },
+    "165746600423fec5cd": {
+      "type": "4columnsimg",
+      "disabled": true,
+      "blocks": {
+        "165746600461a3a360-0": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/DSC05390-9.png"
           }
         },
-        "1656684807d7653023-1": {
+        "165746600461a3a360-1": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/N1e-Santa_Monica.png"
           }
         },
-        "1656684807d7653023-2": {
+        "165746600461a3a360-2": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/LifeStyle_004.png"
           }
         },
-        "32a61be3-3d86-4cf7-a88b-1a117f9a90b0": {
+        "5628abc5-734b-4653-a49d-34ddf126bc32": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Nes_SE_012.png"
@@ -244,43 +355,37 @@
         }
       },
       "block_order": [
-        "1656684807d7653023-0",
-        "1656684807d7653023-1",
-        "1656684807d7653023-2",
-        "32a61be3-3d86-4cf7-a88b-1a117f9a90b0"
+        "165746600461a3a360-0",
+        "165746600461a3a360-1",
+        "165746600461a3a360-2",
+        "5628abc5-734b-4653-a49d-34ddf126bc32"
       ],
       "settings": {
-        "title": "Multicolumn"
+        "title": ""
       }
     },
-    "1657027087a86ba18a": {
+    "1657466061eadb77aa": {
       "type": "awards",
       "blocks": {
-        "16570270872326509b-0": {
+        "16574660616fd57cf0-0": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/GDA19_HO_GOLD_RGB.png"
           }
         },
-        "16570270872326509b-1": {
+        "16574660616fd57cf0-1": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/black.png"
           }
         },
-        "16570270872326509b-2": {
+        "16574660616fd57cf0-2": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/BIGSEE_Design_Award.png"
           }
         },
-        "4c920a1a-e9d5-4b2f-b6ff-f679f9352920": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Platinette_2019_black.png"
-          }
-        },
-        "18a36302-e451-4a38-8198-f05252235fbd": {
+        "33d3eca0-5fb6-4f29-8568-0abf067fc530": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/NY-Producty-Design-Awards-Badge-Gold_Gold.png"
@@ -288,39 +393,42 @@
         }
       },
       "block_order": [
-        "16570270872326509b-0",
-        "16570270872326509b-1",
-        "16570270872326509b-2",
-        "4c920a1a-e9d5-4b2f-b6ff-f679f9352920",
-        "18a36302-e451-4a38-8198-f05252235fbd"
+        "16574660616fd57cf0-0",
+        "16574660616fd57cf0-1",
+        "16574660616fd57cf0-2",
+        "33d3eca0-5fb6-4f29-8568-0abf067fc530"
       ],
       "settings": {
-        "title": "Multicolumn",
-        "descp": ""
+        "title": "International design awards",
+        "descp": "Make your life easier with the N1e electric kick scooter. Same styling as the N1, but with new standard features."
       }
     },
-    "165709728365cd1517": {
+    "165746607335b8d9a6": {
       "type": "custom-form",
       "settings": {
-        "heading": "We’d love to hear from you",
+        "heading": "Contact form",
         "bgcolor": "",
         "heading_size": "h1",
         "color_scheme": "background-1",
-        "padding_top": 32,
-        "padding_bottom": 32
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
   "order": [
-    "16571150426ab745af",
-    "165702366162115100",
-    "16570129039b779164",
-    "16570092354f24c9ea",
-    "165702319361285a75",
-    "165700928027f7671b",
-    "165900931424a39015",
-    "165668480771c8417e",
-    "1657027087a86ba18a",
-    "165709728365cd1517"
+    "main",
+    "1657498182a6c74fc3",
+    "1657454172d0d8608b",
+    "16574548703a95b044",
+    "1657494037b74f2f62",
+    "165745543571ec3b8c",
+    "165745663961baa50e",
+    "16576108066c73a015",
+    "16574656587b3fbf11",
+    "1657613135fc8c6eb7",
+    "1657465896c6d561c0",
+    "165746600423fec5cd",
+    "1657466061eadb77aa",
+    "165746607335b8d9a6"
   ]
 }

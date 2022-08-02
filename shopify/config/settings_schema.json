@@ -1190,5 +1190,67 @@
         "info": "t:settings_schema.cart.settings.cart_drawer.collection.info"
       }
     ]
+  },
+  {
+    "name": "Translation Lab",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Language Switcher"
+      },
+      {
+        "type": "checkbox",
+        "id": "header_language_switcher_enabled",
+        "label": "Enable language switcher",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Flags"
+      },
+      {
+        "type": "checkbox",
+        "id": "header_language_switcher_flags",
+        "label": "Show flags",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Labels"
+      },
+      {
+        "type": "select",
+        "id": "header_language_switcher_label",
+        "options": [
+          {
+            "value": "language-name",
+            "label": "Language name"
+          },
+          {
+            "value": "language-code",
+            "label": "Language code"
+          }
+        ],
+        "default": "language-name"
+      },
+      {
+        "type": "header",
+        "content": "Language to country flag mapping"
+      },
+      {
+        "type": "textarea",
+        "id": "tl_sw_language_country_mapping",
+        "placeholder": "List the language code and corresponding country code in order to change the flag for each language.\nExample: en:US,fr:CA"
+      },
+      {
+        "type": "header",
+        "content": "Custom CSS"
+      },
+      {
+        "type": "textarea",
+        "id": "header_language_switcher_custom_css",
+        "placeholder": "@media screen and (max-width: 768px) {}"
+      }
+    ]
   }
 ]

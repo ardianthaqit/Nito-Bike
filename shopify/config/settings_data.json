@@ -83,10 +83,10 @@
     "sale_badge_color_scheme": "accent-2",
     "sold_out_badge_color_scheme": "inverse",
     "accent_icons": "text",
-    "social_twitter_link": "",
-    "social_facebook_link": "",
-    "social_pinterest_link": "",
-    "social_instagram_link": "",
+    "social_twitter_link": "#",
+    "social_facebook_link": "#",
+    "social_pinterest_link": "#",
+    "social_instagram_link": "#",
     "social_tiktok_link": "",
     "social_tumblr_link": "",
     "social_snapchat_link": "",
@@ -105,6 +105,7 @@
         "blocks": {
           "announcement-bar-0": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Welcome to our store",
               "color_scheme": "background-1",
@@ -121,10 +122,12 @@
         "type": "header",
         "settings": {
           "color_scheme": "background-1",
-          "logo": "{{ shop.brand.logo }}",
-          "logo_width": 90,
+          "logo": "shopify:\/\/shop_images\/NITO-nero.png",
+          "logowhite": "shopify:\/\/shop_images\/NITO-nero_820b1e70-1190-4c8c-bd8f-112ea30695ac.png",
+          "logo_width": 140,
           "logo_position": "middle-left",
           "menu": "main-menu",
+          "menu_type_desktop": "dropdown",
           "show_line_separator": true,
           "enable_sticky_header": true,
           "margin_bottom": 0,
@@ -138,32 +141,43 @@
           "footer-0": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
-              "menu": "footer"
+              "heading": "Nito products",
+              "menu": "nito-products"
             }
           },
           "footer-1": {
             "type": "link_list",
             "settings": {
-              "heading": "Info",
-              "menu": "footer"
+              "heading": "Menu",
+              "menu": "main-menu"
             }
           },
-          "footer-2": {
-            "type": "text",
+          "81c86556-014a-4347-a4f3-fc156784f36c": {
+            "type": "link_list",
             "settings": {
-              "heading": "Our mission",
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+              "heading": "Menu",
+              "menu": "other-links"
+            }
+          },
+          "2bd3fd12-3116-479c-a9d3-f3c54cad79a7": {
+            "type": "image",
+            "settings": {
+              "title_image_footer": "International design awards",
+              "image": "shopify:\/\/shop_images\/Group_1.png",
+              "image_width": 110,
+              "alignment": "center"
             }
           }
         },
         "block_order": [
           "footer-0",
           "footer-1",
-          "footer-2"
+          "81c86556-014a-4347-a4f3-fc156784f36c",
+          "2bd3fd12-3116-479c-a9d3-f3c54cad79a7"
         ],
         "settings": {
           "color_scheme": "background-1",
+          "bgcolor": "#f2f2f2",
           "newsletter_enable": true,
           "newsletter_heading": "Subscribe to our emails",
           "show_social": true,
@@ -188,6 +202,50 @@
         "settings": {
           "color_scheme": "background-1"
         }
+      }
+    },
+    "content_for_index": [],
+    "blocks": {
+      "8765772171712610185": {
+        "type": "shopify:\/\/apps\/t-lab-ai-language-translate\/blocks\/language_switcher\/b5b83690-efd4-434d-8c6a-a5cef4019faf",
+        "disabled": true,
+        "settings": {
+          "enable_language_switcher": true,
+          "enable_country_region_switcher": false,
+          "use_modal_dialog": false,
+          "use_currency_for_region": false,
+          "switcher_position": "custom",
+          "show_flags": true,
+          "language_label": "language-name",
+          "language_country_mapping": "",
+          "countries_filter": "",
+          "custom_css": "",
+          "header_switcher_reference_element": "",
+          "header_switcher_relative_position": "before",
+          "mobile_menu_switcher_reference_element": "",
+          "mobile_switcher_relative_position": "before",
+          "switcher_viewport_position": "top-right",
+          "custom_position_spacing_top": "55",
+          "custom_position_spacing_right": "20",
+          "custom_position_spacing_bottom": "20",
+          "custom_position_spacing_left": "20",
+          "custom_switcher_font_size": "14px",
+          "custom_switcher_font_weight": "normal",
+          "custom_switcher_border_width": 1,
+          "custom_switcher_text_color": "#5c5c5c",
+          "custom_switcher_background_color": "#ffffff",
+          "custom_switcher_border_color": "#000000"
+        }
+      },
+      "4571859552318407796": {
+        "type": "shopify:\/\/apps\/g-variant-image-color-swatch\/blocks\/app-embed-block\/4394f710-096c-4021-bbde-8ebb26057c11",
+        "disabled": false,
+        "settings": {}
+      },
+      "judgeme_core_faa3c05f": {
+        "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {}
       }
     }
   },

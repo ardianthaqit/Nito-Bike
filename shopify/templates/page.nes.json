@@ -1,0 +1,433 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "1657631262fba274f6": {
+      "type": "product_info",
+      "blocks": {
+        "16576312625faaf3bb-0": {
+          "type": "column",
+          "settings": {}
+        },
+        "16576312625faaf3bb-1": {
+          "type": "column",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "16576312625faaf3bb-0",
+        "16576312625faaf3bb-1"
+      ],
+      "settings": {
+        "bgimage": "nes",
+        "title": "Multicolumn"
+      }
+    },
+    "1657631274f6aade45": {
+      "type": "multicolumn",
+      "blocks": {
+        "1657631273c2139c6c-0": {
+          "type": "column",
+          "settings": {
+            "title": "Comfortable",
+            "text": "<p>Nippy and practical for the city or the scenic route, your NES is comfortable anywhere and in any conditions.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1657631273c2139c6c-1": {
+          "type": "column",
+          "settings": {
+            "title": "Dynamic",
+            "text": "<p>With its Café Racer style and its outstanding engine, combining sportiness and class is a piece of cake for the NES.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1657631273c2139c6c-2": {
+          "type": "column",
+          "settings": {
+            "title": "Safe",
+            "text": "<p>Incredible driving pleasure in complete safety, thanks to all-terrain tyres and high-performance disc brakes.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1657631273c2139c6c-0",
+        "1657631273c2139c6c-1",
+        "1657631273c2139c6c-2"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16576312920163f9cd": {
+      "type": "mini-banner_btn",
+      "settings": {
+        "text": "Cutomize your personal electric kick scooter",
+        "color": "blue",
+        "url": "#",
+        "labelurl": "Configure and buy"
+      }
+    },
+    "1657631302eb622ec3": {
+      "type": "Image_with_text",
+      "blocks": {
+        "165763130215d25cbf-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/dettagli-hotspot-batteria.png",
+            "secimage": "shopify:\/\/shop_images\/Rectangle_1.png",
+            "boxposition": "top"
+          }
+        },
+        "165763130215d25cbf-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/dettagli-hotspot-vano.png",
+            "secimage": "shopify:\/\/shop_images\/Rectangle_1.png",
+            "boxposition": "bottom"
+          }
+        },
+        "41e9b7fa-7b95-4a40-8e1c-fadc3e0a3974": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/dettagli-hotspot-pedalina.png",
+            "secimage": "shopify:\/\/shop_images\/Rectangle_1.png",
+            "boxposition": "top"
+          }
+        },
+        "d5f40a35-e7d8-4afd-bb8e-0dac3404f687": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pneumatico_pirelli_accessorio.png",
+            "secimage": "shopify:\/\/shop_images\/Rectangle_1.png",
+            "boxposition": "bottom"
+          }
+        }
+      },
+      "block_order": [
+        "165763130215d25cbf-0",
+        "165763130215d25cbf-1",
+        "41e9b7fa-7b95-4a40-8e1c-fadc3e0a3974",
+        "d5f40a35-e7d8-4afd-bb8e-0dac3404f687"
+      ],
+      "settings": {
+        "title": "Multicolumn"
+      }
+    },
+    "1657631328e1848b57": {
+      "type": "show_product",
+      "settings": {
+        "firstproduct": "shopify:\/\/shop_images\/NES_-_No_one_is_like_him_details.png"
+      }
+    },
+    "165763134071078168": {
+      "type": "icons-detailpage",
+      "blocks": {
+        "165763134013b08f0c-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/surface1.png",
+            "title": "range of up to 60 km"
+          }
+        },
+        "165763134013b08f0c-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/car-lights.png",
+            "title": "Front LED lights"
+          }
+        },
+        "165763134013b08f0c-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_5154.png",
+            "title": "Voltage 72V"
+          }
+        },
+        "3989dee9-da8b-42df-a772-3c2eb5457309": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/charger.png",
+            "title": "Recharges in 3-4 hours"
+          }
+        },
+        "ae649751-ae4b-4b6c-a176-46c6a05d346d": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/dashboard.png",
+            "title": "Max speed 90 km\/h"
+          }
+        },
+        "546fd13a-518b-49df-9a9b-74d03a5c5a58": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/XMLID_1055.png",
+            "title": "Tyre 120 x 90 R10"
+          }
+        }
+      },
+      "block_order": [
+        "165763134013b08f0c-0",
+        "165763134013b08f0c-1",
+        "165763134013b08f0c-2",
+        "3989dee9-da8b-42df-a772-3c2eb5457309",
+        "ae649751-ae4b-4b6c-a176-46c6a05d346d",
+        "546fd13a-518b-49df-9a9b-74d03a5c5a58"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "bgcolor": ""
+      }
+    },
+    "165763135731060e8c": {
+      "type": "accessories_section",
+      "disabled": true,
+      "blocks": {
+        "ada24915-850c-4ba2-ae90-0095efe9fcde": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/staffa_bauletto_HD.png",
+            "text": "Top case support"
+          }
+        },
+        "45b58772-f16c-43a0-96fd-99d0a2beae19": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/accessori_sella_black.png",
+            "text": "Leather saddle"
+          }
+        },
+        "40edfbdc-60af-46cf-a1f8-e327ba47be9a": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/17.png",
+            "text": "Top case 25L"
+          }
+        }
+      },
+      "block_order": [
+        "ada24915-850c-4ba2-ae90-0095efe9fcde",
+        "45b58772-f16c-43a0-96fd-99d0a2beae19",
+        "40edfbdc-60af-46cf-a1f8-e327ba47be9a"
+      ],
+      "settings": {
+        "heading": "Accessories",
+        "description": "Make your life easier with the N1e electric kick scooter. Same styling as the N1,",
+        "btn": "#",
+        "btnlabel": "See all accesories",
+        "bgcolor": "#f8f9fa"
+      }
+    },
+    "1657631372d2091db9": {
+      "type": "2columnsimg",
+      "blocks": {
+        "1657631372b74f88cc-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Mask_Group_16_6a885bb1-48fc-4d1e-bd5d-18703d0a5db9.png"
+          }
+        },
+        "1657631372b74f88cc-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Mask_Group_15_a1b6aef9-d861-4644-a378-4d3d34e169d5.png"
+          }
+        }
+      },
+      "block_order": [
+        "1657631372b74f88cc-0",
+        "1657631372b74f88cc-1"
+      ],
+      "settings": {
+        "title": "Multicolumn"
+      }
+    },
+    "1657631394ed73ebed": {
+      "type": "mini-banner_btn",
+      "settings": {
+        "text": "Cutomize your personal electric kick scooter",
+        "color": "blue",
+        "url": "#",
+        "labelurl": "Configure and buy"
+      }
+    },
+    "1657631412632a114b": {
+      "type": "review_section",
+      "blocks": {
+        "0e4f45e6-63bc-4eec-af63-c68617ca09c5": {
+          "type": "text",
+          "settings": {
+            "svg_code": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"124\" height=\"19\" viewbox=\"0 0 124 19\">\n  <g id=\"Starts\" transform=\"translate(-630 -3046)\">\n    <path id=\"Star\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(628 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(654 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_2\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(706 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_3\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(680 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_4\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(732 3044)\" fill=\"#ffc543\"><\/path>\n  <\/g>\n<\/svg>",
+            "name": "John Doe",
+            "position": "",
+            "description": "<p>Nullam quis magna vel libero porttitor euismod. Vestibulum ante ipsum primis in faucibus orci <\/p>"
+          }
+        },
+        "34ab0e3d-7e31-4f6e-9588-f13151cb188b": {
+          "type": "text",
+          "settings": {
+            "svg_code": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"124\" height=\"19\" viewbox=\"0 0 124 19\">\n  <g id=\"Starts\" transform=\"translate(-630 -3046)\">\n    <path id=\"Star\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(628 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(654 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_2\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(706 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_3\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(680 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_4\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(732 3044)\" fill=\"#ffc543\"><\/path>\n  <\/g>\n<\/svg>",
+            "name": "John Doe",
+            "position": "",
+            "description": "<p>Nullam quis magna vel libero porttitor euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam ex magna,<\/p>"
+          }
+        },
+        "59bce34e-1362-4a7f-90d3-70a16d33ce1d": {
+          "type": "text",
+          "settings": {
+            "svg_code": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"124\" height=\"19\" viewbox=\"0 0 124 19\">\n  <g id=\"Starts\" transform=\"translate(-630 -3046)\">\n    <path id=\"Star\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(628 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(654 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_2\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(706 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_3\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(680 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_4\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(732 3044)\" fill=\"#ffc543\"><\/path>\n  <\/g>\n<\/svg>",
+            "name": "John Doe",
+            "position": "",
+            "description": "<p>Nullam quis magna vel libero porttitor euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam ex magna<\/p>"
+          }
+        },
+        "d7ca4528-00b1-4e40-8007-35ff160b6162": {
+          "type": "text",
+          "settings": {
+            "svg_code": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"124\" height=\"19\" viewbox=\"0 0 124 19\">\n  <g id=\"Starts\" transform=\"translate(-630 -3046)\">\n    <path id=\"Star\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(628 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(654 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_2\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(706 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_3\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(680 3044)\" fill=\"#ffc543\"><\/path>\n    <path id=\"star_1_4\" data-name=\"star (1)\" d=\"M12,2l3.09,6.253L22,9.262l-5,4.865L18.18,21,12,17.753,5.82,21,7,14.127,2,9.262,8.91,8.253Z\" transform=\"translate(732 3044)\" fill=\"#ffc543\"><\/path>\n  <\/g>\n<\/svg>",
+            "name": "John Doe",
+            "position": "",
+            "description": "<p>Nullam quis magna vel libero porttitor euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam ex magna, scelerisque at lorem et, maximus tempus lacus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin vehicula neque erat, a blandit elit vehicula non.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "0e4f45e6-63bc-4eec-af63-c68617ca09c5",
+        "34ab0e3d-7e31-4f6e-9588-f13151cb188b",
+        "59bce34e-1362-4a7f-90d3-70a16d33ce1d",
+        "d7ca4528-00b1-4e40-8007-35ff160b6162"
+      ],
+      "settings": {
+        "heading": "Trusted by thousand of satisfied clients all across the globe",
+        "bgcolor": "#f7f7f7"
+      }
+    },
+    "1657631447b493b0a7": {
+      "type": "4columnsimg",
+      "disabled": true,
+      "blocks": {
+        "165763144732098839-0": {
+          "type": "column",
+          "settings": {}
+        },
+        "165763144732098839-1": {
+          "type": "column",
+          "settings": {}
+        },
+        "165763144732098839-2": {
+          "type": "column",
+          "settings": {}
+        },
+        "c9354d25-ded4-4f07-a14c-5fa8a1e0a52d": {
+          "type": "column",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "165763144732098839-0",
+        "165763144732098839-1",
+        "165763144732098839-2",
+        "c9354d25-ded4-4f07-a14c-5fa8a1e0a52d"
+      ],
+      "settings": {
+        "title": "Multicolumn"
+      }
+    },
+    "1657631457b4dce867": {
+      "type": "awards",
+      "blocks": {
+        "1657631457eb1bfb81-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/GDA19_HO_GOLD_RGB.png"
+          }
+        },
+        "1657631457eb1bfb81-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/black.png"
+          }
+        },
+        "1657631457eb1bfb81-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BIGSEE_Design_Award.png"
+          }
+        },
+        "d04ac97d-cc97-4bbe-a7d5-ee79d15bb568": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Platinette_2019_black.png"
+          }
+        },
+        "cd24fcdc-2fda-4f44-bb4d-df52de9294bd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/NY-Producty-Design-Awards-Badge-Gold_Gold.png"
+          }
+        }
+      },
+      "block_order": [
+        "1657631457eb1bfb81-0",
+        "1657631457eb1bfb81-1",
+        "1657631457eb1bfb81-2",
+        "d04ac97d-cc97-4bbe-a7d5-ee79d15bb568",
+        "cd24fcdc-2fda-4f44-bb4d-df52de9294bd"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "descp": ""
+      }
+    },
+    "1657631478c640cd40": {
+      "type": "custom-form",
+      "settings": {
+        "heading": "Contact form",
+        "bgcolor": "",
+        "heading_size": "h1",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1657631262fba274f6",
+    "1657631274f6aade45",
+    "16576312920163f9cd",
+    "1657631302eb622ec3",
+    "1657631328e1848b57",
+    "165763134071078168",
+    "165763135731060e8c",
+    "1657631372d2091db9",
+    "1657631394ed73ebed",
+    "1657631412632a114b",
+    "1657631447b493b0a7",
+    "1657631457b4dce867",
+    "1657631478c640cd40"
+  ]
+}
